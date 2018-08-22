@@ -36,6 +36,16 @@ class amsmath(Environment):
     packages = [Package('amsmath')]
     escape = False
     content_separator = "\n"
+    
+def strip(string):
+    string=re.sub('<[^<]+?>', '', string)
+    string=string.replace('\\(','$')
+    string=string.replace('\\)','$')
+    
+    string=string.replace('&amp;','&')
+    string=string.replace('&nbsp;', '')
+    
+    return string
 
 doc = Document()
 
@@ -64,13 +74,15 @@ with doc.create(Section('Questions')):
         with doc.create(Subsection(qTitle)):
             content=q['content']
             #strip html tags
-            content=re.sub('<[^<]+?>', '', content)
+            #content=re.sub('<[^<]+?>', '', content)
             #change mathjax to standard latex
-            content=content.replace('\\(','$')
-            content=content.replace('\\)','$')
+            #content=content.replace('\\(','$')
+            #content=content.replace('\\)','$')
             
-            content=content.replace('&amp;','&')
-            content=content.replace('&nbsp;', ' ')
+            #content=content.replace('&amp;','&')
+            #content=content.replace('&nbsp;', ' ')
+            
+            content=strip(content)
             
             doc.append(NoEscape(content))
             if q['content_type']=='question':
@@ -82,11 +94,12 @@ with doc.create(Section('Questions')):
             
                         for a in q['choices']:
                             ans=a['answer']
-                        #change mathjax to standard latex
-                        #TODO: fix this (pylatex likes to make them "textblackslash" in latex)
-                            ans=ans.replace('\\(','$')
-                            ans=ans.replace('\\)','$')
-                            ans=ans.replace('\\\\', '\\')
+                            #change mathjax to standard latex
+                            #TODO: fix this (pylatex likes to make them "textblackslash" in latex)
+                            ans=strip(ans)        
+                            #ans=ans.replace('\\(','')
+                            #ans=ans.replace('\\)','')
+                            #ans=ans.replace('\\\\', '\\')
                             #print(ans)
                             #answers.add_item(a['answer'])
                             enum.add_item(ans)
