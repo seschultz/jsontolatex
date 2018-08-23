@@ -38,7 +38,10 @@ class amsmath(Environment):
     content_separator = "\n"
     
 def strip(string):
+    #strip html tags
     string=re.sub('<[^<]+?>', '', string)
+    
+    #mathjax stuff
     string=string.replace('\\(','$')
     string=string.replace('\\)','$')
     
@@ -64,23 +67,10 @@ doc.append(NoEscape(r'\maketitle'))
 with doc.create(Section('Questions')):
     #i=0
     for q in data["questions"]:
-        #i+=1
-    #content=q['content']
-    #pprint(content)
-    #if q['mode']=='multiple':
-    #    for a in q['choices']:
-    #        i+=1
+
         qTitle=q['title']   
         with doc.create(Subsection(qTitle)):
             content=q['content']
-            #strip html tags
-            #content=re.sub('<[^<]+?>', '', content)
-            #change mathjax to standard latex
-            #content=content.replace('\\(','$')
-            #content=content.replace('\\)','$')
-            
-            #content=content.replace('&amp;','&')
-            #content=content.replace('&nbsp;', ' ')
             
             content=strip(content)
             
@@ -88,23 +78,13 @@ with doc.create(Section('Questions')):
             if q['content_type']=='question':
                 if q['mode']=='multiple' or q['mode']=='true':
                     with doc.create(Enumerate(enumeration_symbol=r"\alph*)")) as enum:
-            #itemize.add_item("the first item")
-            #itemize.add_item("the second item")
-            #itemize.add_item("the third etc")
-            
+
                         for a in q['choices']:
                             ans=a['answer']
                             #change mathjax to standard latex
                             #TODO: fix this (pylatex likes to make them "textblackslash" in latex)
                             ans=strip(ans)        
-                            #ans=ans.replace('\\(','')
-                            #ans=ans.replace('\\)','')
-                            #ans=ans.replace('\\\\', '\\')
-                            #print(ans)
-                            #answers.add_item(a['answer'])
                             enum.add_item(ans)
-            
-                    #doc.append(NoEscape(answers))
     #hack to make sure amsmath package is declared
     with doc.create(amsmath()):
         doc.append('')
