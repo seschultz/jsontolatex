@@ -1,0 +1,666 @@
+            {
+  "due_date": "2017-02-05T22:30:00Z",
+  "max_attempts_for_credit": 10,
+  "due_date_raw": "2017-02-05T17:30:00Z",
+  "in_practice_mode": true,
+  "group_id": 12,
+  "author": 35,
+  "views": 0,
+  "title": "Homework 1: Linear Algebra & Calculus",
+  "show_credit": true,
+  "content": "test",
+  "course": 12,
+  "is_live": true,
+  "version": 20,
+  "is_admin": true,
+  "questions": [
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.628Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 556,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.626Z",
+      "choices": [
+        {
+          "answer": "9",
+          "is_correct": false,
+          "id": 3555,
+          "feedback": ""
+        },
+        {
+          "answer": "11",
+          "is_correct": true,
+          "id": 3556,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\begin{bmatrix} 11 \\\\ 9 \\end{bmatrix}\\)",
+          "is_correct": false,
+          "id": 3557,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\begin{bmatrix} 6 \\\\ 15 \\end{bmatrix}\\)",
+          "is_correct": false,
+          "id": 3558,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Consider the matrix X and the vectors y and z below: X=\\(\\begin{bmatrix} 2 &amp; 4 \\\\ 1 &amp; 3 \\end{bmatrix}\\) y=\\(\\begin{bmatrix} 1 \\\\ 3 \\end{bmatrix}\\) z=\\(\\begin{bmatrix} 2 \\\\ 3 \\end{bmatrix}\\) What is the inner product of the vectors y and z? (this is also sometimes called the dot product)</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 556
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.658Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 557,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.655Z",
+      "choices": [
+        {
+          "answer": "\\(\\begin{bmatrix} 14 \\\\ 10 \\end{bmatrix}\\)",
+          "is_correct": true,
+          "id": 3559,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\begin{bmatrix} 12 \\\\ 8 \\end{bmatrix}\\)",
+          "is_correct": false,
+          "id": 3560,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\begin{bmatrix} 10 \\\\ 14 \\end{bmatrix}\\)",
+          "is_correct": false,
+          "id": 3561,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\begin{bmatrix} 14 \\\\ 12 \\end{bmatrix}\\)",
+          "is_correct": false,
+          "id": 3562,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Using the same values for X, y, and z as above, what is the product of Xy?</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 557
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.688Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 558,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.686Z",
+      "choices": [
+        {
+          "answer": "0",
+          "is_correct": false,
+          "id": 3563,
+          "feedback": ""
+        },
+        {
+          "answer": "1",
+          "is_correct": false,
+          "id": 3564,
+          "feedback": ""
+        },
+        {
+          "answer": "2",
+          "is_correct": true,
+          "id": 3565,
+          "feedback": ""
+        },
+        {
+          "answer": "3",
+          "is_correct": false,
+          "id": 3566,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Using the same values for X, y, and z as above, state the rank of X.</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 558
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.717Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 559,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.714Z",
+      "choices": [
+        {
+          "answer": "0",
+          "is_correct": false,
+          "id": 3567,
+          "feedback": ""
+        },
+        {
+          "answer": "-2",
+          "is_correct": false,
+          "id": 3568,
+          "feedback": ""
+        },
+        {
+          "answer": "2",
+          "is_correct": true,
+          "id": 3569,
+          "feedback": ""
+        },
+        {
+          "answer": "10",
+          "is_correct": false,
+          "id": 3570,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Using the same values for X, y, and z as above, state the determinant&nbsp;of X.</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 559
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.745Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 560,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.743Z",
+      "choices": [
+        {
+          "answer": "\\( \\begin{bmatrix} 3 & -4 \\\\ -1 & 2 \\end{bmatrix} \\)",
+          "is_correct": false,
+          "id": 3571,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\begin{bmatrix} 1/2& 1/4 \\\\ 1 & 1/3  \\end{bmatrix}\\)",
+          "is_correct": false,
+          "id": 3572,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\begin{bmatrix} 3/2 & -2 \\\\ -1/2 & 1  \\end{bmatrix}\\)",
+          "is_correct": true,
+          "id": 3573,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\begin{bmatrix} 3/2 & 2 \\\\ 1/2 & 1  \\end{bmatrix}\\)",
+          "is_correct": false,
+          "id": 3574,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Using the same values for X, y, and z as above, state the inverse of X.</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 560
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.774Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 561,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.771Z",
+      "choices": [
+        {
+          "answer": "\\( \\begin{bmatrix} 28 & 11 & 6 \\\\ 13 & 4 & -9 \\\\ 4 & -4 & 12 \\end{bmatrix} \\)",
+          "is_correct": false,
+          "id": 3575,
+          "feedback": ""
+        },
+        {
+          "answer": "\\( \\begin{bmatrix} 20 & 20 & 28 \\\\ 6 & 9 & -7 \\\\ -3 & -2 & 13 \\end{bmatrix} \\)",
+          "is_correct": false,
+          "id": 3576,
+          "feedback": ""
+        },
+        {
+          "answer": "\\( \\begin{bmatrix} 20 & -20 & -28 \\\\ -6 & 9 & 7 \\\\ 3 & 2 & 13 \\end{bmatrix} \\)",
+          "is_correct": false,
+          "id": 3577,
+          "feedback": ""
+        },
+        {
+          "answer": "\\( \\begin{bmatrix} 20 & 20 & 28 \\\\ -1 & -3 & -16 \\\\ 8 & 2 & 22 \\end{bmatrix} \\)",
+          "is_correct": true,
+          "id": 3578,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>For the matrices&nbsp;\\(A=\\begin{bmatrix} 5 &amp; 2 &amp; 1 \\\\ -2 &amp; 1 &amp; 3 \\\\ 2 &amp; 2 &amp; -2 \\end{bmatrix} \\) and \\(B=\\begin{bmatrix} 3 &amp; 4 &amp; 5 \\\\ 2 &amp; -1 &amp; 3 \\\\ 1 &amp; 2 &amp; -3 \\end{bmatrix}\\)</p>\n<p>What is the product AB?</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 561
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.802Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 562,
+      "question_weight": 1,
+      "category_id": 3,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.799Z",
+      "choices": [
+        {
+          "answer": "True",
+          "is_correct": true,
+          "id": 3579,
+          "feedback": ""
+        },
+        {
+          "answer": "False",
+          "is_correct": false,
+          "id": 3580,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>True or False, The matrix A from the previous question has an inverse?</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "true",
+      "content_id": 562
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.830Z",
+      "answers": [
+        {
+          "answer": "-42",
+          "is_numeric": true,
+          "id": 3136,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 563,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.823Z",
+      "choices": [],
+      "content": "<p>What is the determinant&nbsp;of A from the previous question?</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "numerical",
+      "content_id": 563
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.855Z",
+      "answers": [
+        {
+          "answer": "-1",
+          "is_numeric": true,
+          "id": 3137,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 564,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Vectors and Matrices",
+      "created_at": "2017-01-18T22:38:17.849Z",
+      "choices": [],
+      "content": "<p>What is the trace of B from the previous question?</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "numerical",
+      "content_id": 564
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.870Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 565,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Calculus",
+      "created_at": "2017-01-18T22:38:17.869Z",
+      "choices": [
+        {
+          "answer": "\\(3x^2\\)",
+          "is_correct": false,
+          "id": 3581,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(3x^2+1\\)",
+          "is_correct": true,
+          "id": 3582,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(3x^2+5\\)",
+          "is_correct": false,
+          "id": 3583,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(3x^2+x+5\\)",
+          "is_correct": false,
+          "id": 3584,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Find the derivative of y with respect to x, where \\(y=x^3+x&minus;5\\)</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 565
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.901Z",
+      "answers": [
+        {
+          "answer": "11",
+          "is_numeric": true,
+          "id": 3138,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 566,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Calculus",
+      "created_at": "2017-01-18T22:38:17.899Z",
+      "choices": [],
+      "content": "<p>Evaluate the derivative of y with respect to x, where \\(y = 3x^2 + \\frac{4}{x^2}\\) at x = 2</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "numerical",
+      "content_id": 566
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.917Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 567,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Calculus",
+      "created_at": "2017-01-18T22:38:17.914Z",
+      "choices": [
+        {
+          "answer": "\\(\\sin(z) e^{-x}(1+x)\\)",
+          "is_correct": false,
+          "id": 3585,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\sin(z) e^{-x}\\)",
+          "is_correct": false,
+          "id": 3586,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\sin(z) e^{-x}(1-x)\\)",
+          "is_correct": true,
+          "id": 3587,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\sin(z)( e^{-x}-x)\\)",
+          "is_correct": false,
+          "id": 3588,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Find the partial derivative of \\(y\\) with respect to \\(x\\), where \\(y= x \\sin(z) e^{-x}\\)</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 567
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.954Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 568,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Calculus",
+      "created_at": "2017-01-18T22:38:17.950Z",
+      "choices": [
+        {
+          "answer": "\\(-3sin(3x)\\)",
+          "is_correct": true,
+          "id": 3589,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(-3xsin(3x)\\)",
+          "is_correct": false,
+          "id": 3590,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(3xsin(3)\\)",
+          "is_correct": false,
+          "id": 3591,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(-3cos(3x)\\)",
+          "is_correct": false,
+          "id": 3592,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>What is the derivative of cos(3x)?</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 568
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:17.992Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 569,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Calculus",
+      "created_at": "2017-01-18T22:38:17.990Z",
+      "choices": [
+        {
+          "answer": "a minimum",
+          "is_correct": true,
+          "id": 3593,
+          "feedback": ""
+        },
+        {
+          "answer": "a maximum",
+          "is_correct": false,
+          "id": 3594,
+          "feedback": ""
+        },
+        {
+          "answer": "a minimum or a maximum",
+          "is_correct": false,
+          "id": 3595,
+          "feedback": ""
+        },
+        {
+          "answer": "None of the above",
+          "is_correct": false,
+          "id": 3596,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>If you take the derivative of \\(x^2 + 4x - 3\\) set the derivative to 0 and solve for x you will find:</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 569
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:18.022Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 570,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Calculus",
+      "created_at": "2017-01-18T22:38:18.020Z",
+      "choices": [
+        {
+          "answer": "\\(6 - cos(x)\\)",
+          "is_correct": false,
+          "id": 3597,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(x^6 + 12x - cos(x)\\)",
+          "is_correct": false,
+          "id": 3598,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(6x^2 + cos(x)\\)",
+          "is_correct": false,
+          "id": 3599,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(3x^2 + 12x + cos(x)\\)",
+          "is_correct": true,
+          "id": 3600,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>What is the integral of \\(6x + 12 - sin(x)\\) dx</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 570
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-18T22:38:18.050Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 571,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Calculus",
+      "created_at": "2017-01-18T22:38:18.047Z",
+      "choices": [
+        {
+          "answer": "\\(\\frac{2}{x} + 5log(x) + e^{-x}\\)",
+          "is_correct": false,
+          "id": 3601,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(-\\frac{2}{x} + 5log(x) + e^{-x}\\)",
+          "is_correct": true,
+          "id": 3602,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(-\\frac{1}{x} + 5 + e^{-x}\\)",
+          "is_correct": false,
+          "id": 3603,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(\\frac{2}{x} + 5x - e^{-x}\\)",
+          "is_correct": false,
+          "id": 3604,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>What is the integral of \\(\\frac{2}{x^2} + \\frac{5}{x} - e^{-x}\\)</p>",
+      "is_live": true,
+      "version": 20,
+      "mode": "multiple",
+      "content_id": 571
+    }
+  ],
+  "is_public": false,
+  "delayed_feedback": false,
+  "late_day_buffer": 10,
+  "content_hash": "0",
+  "late_days": false,
+  "id": 111
+}
+            

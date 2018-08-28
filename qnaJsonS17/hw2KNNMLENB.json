@@ -1,0 +1,1185 @@
+            {
+  "due_date": "2017-02-17T22:30:00Z",
+  "max_attempts_for_credit": 10,
+  "due_date_raw": "2017-02-17T17:30:00Z",
+  "in_practice_mode": true,
+  "group_id": 12,
+  "author": 400,
+  "views": 0,
+  "title": "Homework 2: KNN, MLE, Naive Bayes",
+  "show_credit": true,
+  "content": "test",
+  "course": 12,
+  "is_live": true,
+  "version": 71,
+  "is_admin": true,
+  "questions": [
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-30T04:56:11.904Z",
+      "answers": [
+        {
+          "answer": "4/14",
+          "is_numeric": true,
+          "id": 7406,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. 2 points in each of the two clusters are misclassified (training error=4/14).",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 651,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "k-Nearest Neighbors Classification [2 pts]",
+      "created_at": "2017-01-30T04:56:11.900Z",
+      "choices": [],
+      "content": "<p>Questions 1 and 2 reference the following graphic.</p>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://s3-us-west-2.amazonaws.com/qna.prod/122/1485751976_knn_chart.png\" width=\"355\" height=\"285\" /></p>\n<p>Consider a k-nearest neighbors binary classifier which assigns the class of a&nbsp;test point to be the class of the majority of the \\(k\\) nearest neighbors, according to a Euclidean distance metric.&nbsp;Using the data set shown above to train the classifier and choosing \\(k=5\\), What is the classification error on the training&nbsp;set? Assume that a point can be its own neighbor.</p>",
+      "is_live": true,
+      "version": 34,
+      "mode": "numerical",
+      "content_id": 651
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T21:21:29.228Z",
+      "answers": [
+        {
+          "answer": "1",
+          "is_numeric": true,
+          "id": 7407,
+          "answer_margin": 0,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Training error is 0 with k=1.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 638,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "k-Nearest Neighbors Classification [2 pts]",
+      "created_at": "2017-01-24T21:21:29.224Z",
+      "choices": [],
+      "content": "<p>In the data set shown above, what is the value of \\(k\\) that minimizes the training error? Note that a point can be its own neighbor.</p>",
+      "is_live": true,
+      "version": 65,
+      "mode": "numerical",
+      "content_id": 638
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T21:38:42.811Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 641,
+      "question_weight": 1,
+      "category_id": 3,
+      "title": "k-Nearest Neighbors: Choosing k [2 pts]",
+      "created_at": "2017-01-24T21:38:42.807Z",
+      "choices": [
+        {
+          "answer": "True",
+          "is_correct": false,
+          "id": 4183,
+          "feedback": "Incorrect. \\(k=1\\) will always minimize the training set error but is likely to overfit the training data."
+        },
+        {
+          "answer": "False",
+          "is_correct": true,
+          "id": 4184,
+          "feedback": "Correct!"
+        }
+      ],
+      "content": "<p>Assume we have a training set and a test set drawn from the same distribution, and we would like to classify points in the test set using a kNN classifier. In order to minimize the classification error on this test set, we should always choose the value of \\(k\\) which minimizes the training set error.</p>",
+      "is_live": true,
+      "version": 61,
+      "mode": "true",
+      "content_id": 641
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T04:38:56.620Z",
+      "answers": [
+        {
+          "answer": "4/9",
+          "is_numeric": true,
+          "id": 7408,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Correct answer is 4/9.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 598,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Maximum Likelihood Estimation [2 pts]",
+      "created_at": "2017-01-23T04:38:56.617Z",
+      "choices": [],
+      "content": "<p>Questions 4 through 9 reference the following scenario.</p>\n<p>Let \\(X\\) be the result of a coin toss. \\(X=0\\) if it comes up tails, and \\(X=1\\) otherwise. The coin is biased, with a probability of coming up heads \\(p_1\\).</p>\n<p>Suppose that we observe&nbsp;the following sequence of coin toss outcomes:\\[(0,0,1,1,0,0,1,0,1)\\]</p>\n<p>What is&nbsp;the maximum &shy;likelihood estimate for \\(p_1\\)?</p>",
+      "is_live": true,
+      "version": 85,
+      "mode": "numerical",
+      "content_id": 598
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T04:41:58.381Z",
+      "answers": [
+        {
+          "answer": "2/3",
+          "is_numeric": true,
+          "id": 7409,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Correct answer is 2/3.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 599,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Maximum Likelihood Estimation [2 pts]",
+      "created_at": "2017-01-23T04:41:58.377Z",
+      "choices": [],
+      "content": "<p>Now suppose someone else observes the coin flip (still denoted by \\(X\\)) and tells you \\(Y\\), the outcome of the flip, but this person only reports the correct result with probability \\(p_2\\). Suppose that we have&nbsp;the following dataset:</p>\n<p>\\(X\\) - the sequence of actual coin toss outcomes &shy;&shy;- is \\[(0,0,1,1,0,0,1,0,1)\\]\\(Y\\) -&shy;&shy; the sequence of coin toss outcomes we were told by the other person -&shy;&shy; is \\[(1,0,1,1,1,0,1,0,0)\\] What is&nbsp;the maximum &shy;likelihood estimate for \\(p_2\\)?</p>",
+      "is_live": true,
+      "version": 84,
+      "mode": "numerical",
+      "content_id": 599
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T04:47:10.473Z",
+      "answers": [
+        {
+          "answer": "3/5",
+          "is_numeric": true,
+          "id": 7410,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Correct answer is 3/5.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 600,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Maximum Likelihood Estimation [1 pt]",
+      "created_at": "2017-01-23T04:47:10.470Z",
+      "choices": [],
+      "content": "<p>Another person is observing the coin toss too, but the probability for this person to report the correct result depends on the actual outcome of the coin toss. Let \\(p_{a,b}\\) be the probability for that person to report outcome \\(b\\) given that&nbsp;the actual outcome of the coin toss is \\(a\\), where \\(a,b\\in\\{0,1\\}\\). With the same \\(X\\) and \\(Y\\) values from Question 5, what is the&nbsp;maximum &shy;likelihood estimate for \\(p_{0,0}\\)?</p>",
+      "is_live": true,
+      "version": 83,
+      "mode": "numerical",
+      "content_id": 600
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T04:54:33.674Z",
+      "answers": [
+        {
+          "answer": "2/5",
+          "is_numeric": true,
+          "id": 7411,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Correct answer is 2/5.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 601,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Maximum Likelihood Estimation [1 pt]",
+      "created_at": "2017-01-23T04:54:33.670Z",
+      "choices": [],
+      "content": "<p>With the same \\(X\\) and \\(Y\\) values from Question 5, what is the&nbsp;maximum &shy;likelihood estimate for \\(p_{0,1}\\)?</p>",
+      "is_live": true,
+      "version": 78,
+      "mode": "numerical",
+      "content_id": 601
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T04:55:31.447Z",
+      "answers": [
+        {
+          "answer": "1/4",
+          "is_numeric": true,
+          "id": 7412,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Correct answer is 1/4.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 602,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Maximum Likelihood Estimation [1 pt]",
+      "created_at": "2017-01-23T04:55:31.443Z",
+      "choices": [],
+      "content": "<p>With the same \\(X\\) and \\(Y\\) values from Question 5, what is the&nbsp;maximum &shy;likelihood estimate for \\(p_{1,0}\\)?</p>",
+      "is_live": true,
+      "version": 79,
+      "mode": "numerical",
+      "content_id": 602
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T04:55:58.393Z",
+      "answers": [
+        {
+          "answer": "3/4",
+          "is_numeric": true,
+          "id": 7413,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Correct answer is 3/4.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 603,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Maximum Likelihood Estimation [1 pt]",
+      "created_at": "2017-01-23T04:55:58.390Z",
+      "choices": [],
+      "content": "<p>With the same \\(X\\) and \\(Y\\) values from Question 5, what is the&nbsp;maximum &shy;likelihood estimate for \\(p_{1,1}\\)?</p>",
+      "is_live": true,
+      "version": 78,
+      "mode": "numerical",
+      "content_id": 603
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:06:08.731Z",
+      "answers": [
+        {
+          "answer": "1/6",
+          "is_numeric": true,
+          "id": 7414,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. First find an expression for the log posterior of X, then differentiate and set to zero. Correct answer is 1/6.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 604,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "MAP Estimation [4 pts]",
+      "created_at": "2017-01-23T05:06:08.727Z",
+      "choices": [],
+      "content": "<p>Let \\(X\\) be a random variable with the probability distribution function</p>\n<p>\\[f(x)=\\begin{cases}2x &amp; \\text{if } 0\\le x\\le1 \\\\ 0 &amp; \\text{otherwise}\\end{cases}\\]</p>\n<p>Suppose that another random variable \\(Y\\), conditioning on \\(X=x\\), has an exponential distribution with \\(\\lambda=3x\\). Note that the exponential distribution with parameter \\(\\lambda\\) has a probability distribution function:</p>\n<p>\\[f(y)=\\begin{cases}\\lambda e^{-\\lambda y}&nbsp;&amp; \\text{if } y \\ge 0&nbsp;\\\\ 0 &amp; \\text{otherwise}\\end{cases}\\]</p>\n<p>Find the MAP estimate of \\(X\\) given that \\(Y=4\\) is observed.</p>",
+      "is_live": true,
+      "version": 79,
+      "mode": "numerical",
+      "content_id": 604
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:11:06.551Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 605,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "MLE and MAP [2 pts]",
+      "created_at": "2017-01-23T05:11:06.549Z",
+      "choices": [
+        {
+          "answer": "Even Numbers",
+          "is_correct": false,
+          "id": 4185,
+          "feedback": "Incorrect. Likelihood is higher for Any of 4, 32, 64, 128, and 256."
+        },
+        {
+          "answer": "Powers of Two",
+          "is_correct": false,
+          "id": 4186,
+          "feedback": "Incorrect. Likelihood is higher for Any of 4, 32, 64, 128, and 256."
+        },
+        {
+          "answer": "Multiples of Four",
+          "is_correct": false,
+          "id": 4187,
+          "feedback": "Incorrect. Likelihood is higher for Any of 4, 32, 64, 128, and 256."
+        },
+        {
+          "answer": "Any of 4, 32, 64, 128, and 256",
+          "is_correct": true,
+          "id": 4188,
+          "feedback": "Correct!"
+        }
+      ],
+      "content": "<p>Questions 11 and 12 reference the following scenario. Every year, your friends decide on a day to play an elaborate prank on you. In an effort to not be caught unawares this year, you attempt to predict this year's \"prank day\" by studying the previous days your friends chose to prank you. You number every day of the year from 1 to 365 (suppose we don't have any leap years) and observe the previous 5 years' prank days to be: \\[256, 32, 4, 128, 64\\]</p>\n<p>Knowing that your friends are picky about which day to prank you, you suspect that they only pick days that fall in a certain category. In fact, you are certain that the category they use is one of the following:</p>\n<p>Even&nbsp;Numbers</p>\n<p>Powers of Two (includes day 1)</p>\n<p>Multiples of&nbsp;Four</p>\n<p>Any of 4, 32, 64, 128, and&nbsp;256</p>\n<p>Given the above hypotheses, which hypothesis would be the MLE for the true category your friends use? Assume that your friends randomly pick a prank day within the true category uniformly, the randomly picked prank days are independent, and that they could pick the same day multiple times (corresponds to multiple pranks that day).</p>",
+      "is_live": true,
+      "version": 77,
+      "mode": "multiple",
+      "content_id": 605
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:13:35.262Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 606,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "MLE and MAP [2 pts]",
+      "created_at": "2017-01-23T05:13:35.259Z",
+      "choices": [
+        {
+          "answer": "Even Numbers",
+          "is_correct": false,
+          "id": 4189,
+          "feedback": "Incorrect. Posterior probability is higher for Any of 4, 32, 64, 128, and 256."
+        },
+        {
+          "answer": "Powers of Two",
+          "is_correct": false,
+          "id": 4190,
+          "feedback": "Incorrect. Posterior probability is higher for Any of 4, 32, 64, 128, and 256."
+        },
+        {
+          "answer": "Multiples of Four",
+          "is_correct": false,
+          "id": 4191,
+          "feedback": "Incorrect. Posterior probability is higher for Any of 4, 32, 64, 128, and 256."
+        },
+        {
+          "answer": "Any of 4, 32, 64, 128, and 256",
+          "is_correct": true,
+          "id": 4192,
+          "feedback": "Correct"
+        }
+      ],
+      "content": "<p>Continuing from the last problem, you&nbsp;suspect that your friends might favor some categories over others. Specifically, you initially believed (before looking at the data) that the true category can be the following with the given probabilities:</p>\n<p>Even&nbsp;Numbers: \\(\\frac{1}{10}\\)</p>\n<p>Powers of Two:&nbsp;\\(\\frac{1}{2}\\)</p>\n<p>Multiples of Four:&nbsp;\\(\\frac{3}{10}\\)</p>\n<p>Any of 4, 32, 64, 128, and&nbsp;256:&nbsp;\\(\\frac{1}{10}\\)</p>\n<p>What is the MAP estimate for the true category?</p>",
+      "is_live": true,
+      "version": 76,
+      "mode": "multiple",
+      "content_id": 606
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-10-18T13:17:41.897Z",
+      "answers": [
+        {
+          "answer": "0.2",
+          "is_numeric": true,
+          "id": 7415,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. MLE estimate of a is the minimum value in the data set.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 607,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "MLE: Uniform Distribution [2 pts]",
+      "created_at": "2017-01-23T05:20:28.991Z",
+      "choices": [],
+      "content": "<p>Questions 13 through 17 refer to the following scenario.</p>\n<p>Suppose you are offered the chance to play the following simple game: for an entry fee of $3, you can receive \\(X\\) amount of dollars, where \\(X\\) is randomly generated from an unknown distribution every time you play this game. Note that \\(X\\) could potentially be negative, which corresponds to paying a penalty. Unsure about the expected profitability of this game, you first try playing 10 rounds to get an idea of the distribution. Below are the observations of \\(X\\) for each round:</p>\n<table style=\"border-collapse: collapse; width: 65pt;\" border=\"0\" width=\"87\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; width: 65pt; text-align: left;\" align=\"right\" width=\"87\" height=\"21\">2.31</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.20</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">2.17</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">5.19</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">3.81</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">1.07</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">4.89</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">2.57</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.26</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">1.14</td>\n</tr>\n</tbody>\n</table>\n<p>You hypothesize that \\(X\\)&nbsp;might be from a uniform distribution. Recall that a random variable \\(Y\\) that is uniformly distributed between parameters \\(a\\) and \\(b\\)&nbsp;has the PDF:</p>\n<p>\\[f(y)=\\begin{cases}\\frac{1}{b-a} &amp; \\text{if } a \\le y \\le b \\\\ 0 &amp; \\text{otherwise}\\end{cases}\\]</p>\n<p>Assuming that \\(X\\) is from an uniform distribution, compute the MLE for \\(a\\) given the above payoffs. You may assume that given the parameters of the distribution of \\(X\\), each round is independent of each other.</p>\n<p>&nbsp;</p>\n<p>\\(a_{MLE}\\)=</p>",
+      "is_live": true,
+      "version": 94,
+      "mode": "numerical",
+      "content_id": 607
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:20:58.493Z",
+      "answers": [
+        {
+          "answer": "5.19",
+          "is_numeric": true,
+          "id": 7416,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. MLE estimate of b is the maximum value in the data set.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 608,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "MLE: Uniform Distribution [2 pts]",
+      "created_at": "2017-01-23T05:20:58.490Z",
+      "choices": [],
+      "content": "<p>Again assuming that \\(X\\) is from an uniform distribution, compute the MLE for \\(b\\) given the above payoffs. You may assume that given the parameters of the distribution of \\(X\\), each round is independent of each other.</p>\n<p>&nbsp;\\(b_{MLE}\\)=</p>",
+      "is_live": true,
+      "version": 74,
+      "mode": "numerical",
+      "content_id": 608
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:23:56.491Z",
+      "answers": [
+        {
+          "answer": "0.424",
+          "is_numeric": true,
+          "id": 7417,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. MLE of lambda is the fractional inverse of the sample mean.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 609,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "MLE: Exponential Distribution [4 pts]",
+      "created_at": "2017-01-23T05:23:56.488Z",
+      "choices": [],
+      "content": "<p>Not satisfied with the previous results, you now suspect that the payoffs might be drawn from an exponential distribution with parameter \\(\\lambda\\), with PDF&nbsp;given by:</p>\n<p>\\[f(x)=\\begin{cases}\\lambda e^{-\\lambda x}&nbsp;&amp; \\text{if } x \\ge 0&nbsp;\\\\ 0 &amp; \\text{otherwise}\\end{cases}\\]</p>\n<p>Given the payoffs from Question 13, what is the MLE for \\(\\lambda\\) assuming \\(X\\) is from an exponential distribution? Note that by modeling the probability distribution of the payoffs as an exponential you are also assuming that \\(X\\) is never negative.</p>\n<p>&nbsp;\\(\\lambda_{MLE}\\)=</p>",
+      "is_live": true,
+      "version": 74,
+      "mode": "numerical",
+      "content_id": 609
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-10-18T15:19:57.996Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 610,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "MLE: Normal Distribution [4 pts]",
+      "created_at": "2017-01-23T05:27:50.012Z",
+      "choices": [
+        {
+          "answer": "\\(g(n)\\) is \\(O(1)\\)",
+          "is_correct": false,
+          "id": 9961,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(g(n)\\) is \\(O(log \\space  n)\\)",
+          "is_correct": false,
+          "id": 9962,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(g(n)\\) is \\(O(n)\\)",
+          "is_correct": false,
+          "id": 9963,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(g(n)\\) is \\(O(n^2)\\)",
+          "is_correct": false,
+          "id": 9964,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(g(n)\\) is \\(O(n!)\\)",
+          "is_correct": true,
+          "id": 9965,
+          "feedback": "Nice! It is not a tight bound, but is still an upper bound."
+        },
+        {
+          "answer": "None of the options above",
+          "is_correct": false,
+          "id": 9966,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>You were able to simplify it to</p>\n<p><br />\\(g(n) = 333n + 3n^3 + 1024\\)</p>\n<p>&nbsp;</p>\n<p>Choose the an upper bound for your algorithm:</p>",
+      "is_live": true,
+      "version": 101,
+      "mode": "multiple",
+      "content_id": 610
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-10-18T15:19:58.208Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 611,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "MLE: Decision-making [2 pts]",
+      "created_at": "2017-01-23T05:30:14.379Z",
+      "choices": [
+        {
+          "answer": "Uniform",
+          "is_correct": true,
+          "id": 11357,
+          "feedback": "Correct!"
+        },
+        {
+          "answer": "Exponential",
+          "is_correct": false,
+          "id": 11358,
+          "feedback": "Incorrect. Likelihood is highest assuming a Uniform distribution with maximum likelihood estimates for a and b."
+        },
+        {
+          "answer": "Normal with \\(\\sigma=0.5\\)",
+          "is_correct": false,
+          "id": 11359,
+          "feedback": "Incorrect. Likelihood is highest assuming a Uniform distribution with maximum likelihood estimates for a and b."
+        },
+        {
+          "answer": "There is no way to determine which distribution to use.",
+          "is_correct": false,
+          "id": 11360,
+          "feedback": "Incorrect. Likelihood is highest assuming a Uniform distribution with maximum likelihood estimates for a and b."
+        }
+      ],
+      "content": "<p>Based on the MLEs calculated for the three&nbsp;distributions above (uniform, exponential, and normal with \\(\\sigma=0.5\\), which distribution would you use to model the payoffs of this game from a likelihood perspective?</p>",
+      "is_live": true,
+      "version": 77,
+      "mode": "multiple",
+      "content_id": 611
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-26T18:52:39.169Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 650,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "MLE: Guttenberg Distribution [4 pts]",
+      "created_at": "2017-01-26T18:52:39.166Z",
+      "choices": [
+        {
+          "answer": "\\(\\alpha^2_{MLE} = -\\frac{1}{\\sum_i\\ln X_i}\\)",
+          "is_correct": false,
+          "id": 4197,
+          "feedback": "Incorrect. First find an expression for the log likelihood of \\alpha^2, then differentiate and set to zero."
+        },
+        {
+          "answer": "\\(\\alpha^2_{MLE} = -\\frac{1}{n}\\sum_i\\ln X_i\\)",
+          "is_correct": false,
+          "id": 4198,
+          "feedback": "Incorrect. First find an expression for the log likelihood of \\alpha^2, then differentiate and set to zero."
+        },
+        {
+          "answer": "\\(\\alpha^2_{MLE} = \\frac{1}{\\sum_i\\ln X_i}+n\\)",
+          "is_correct": false,
+          "id": 4199,
+          "feedback": "Incorrect. First find an expression for the log likelihood of \\alpha^2, then differentiate and set to zero."
+        },
+        {
+          "answer": "\\(\\alpha^2_{MLE} = -\\frac{n}{\\sum_i\\ln X_i}-1\\)",
+          "is_correct": true,
+          "id": 4200,
+          "feedback": "Correct!"
+        },
+        {
+          "answer": "Correct expression not shown.",
+          "is_correct": false,
+          "id": 4201,
+          "feedback": "Incorrect. First find an expression for the log likelihood of \\alpha^2, then differentiate and set to zero."
+        }
+      ],
+      "content": "<p>Questions 18 through 20 refer to the following description.</p>\n<p>The Guttenberg distribution with parameter \\(\\alpha\\) has a probability distribution function</p>\n<p>\\[f(x)=\\begin{cases}(\\alpha^2+1)x^{\\alpha^2} &amp; \\text{if } 0 \\le x \\le 1 \\\\ 0 &amp; \\text{otherwise}\\end{cases}\\]</p>\n<p>Assume we have \\(n\\) samples drawn&nbsp;i.i.d. from this distribution, \\(X_1, ... , X_n\\). Derive an expression for the maximum likelihood estimate of \\(\\alpha^2\\).&nbsp;</p>",
+      "is_live": true,
+      "version": 51,
+      "mode": "multiple",
+      "content_id": 650
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-10-18T18:47:42.764Z",
+      "answers": [
+        {
+          "answer": "0.604",
+          "is_numeric": true,
+          "id": 7418,
+          "answer_margin": 0.001,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. First find an expression for the log likelihood of \\alpha^2, then differentiate and set to zero.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 612,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "MLE: Guttenberg Distribution [2 pts]",
+      "created_at": "2017-01-23T05:38:59.678Z",
+      "choices": [],
+      "content": "<p>The following sample points are drawn i.i.d. from the&nbsp;Guttenberg distribution described in the previous problem with unknown parameter \\(\\alpha\\):</p>\n<table style=\"border-collapse: collapse; width: 65pt;\" border=\"0\" width=\"87\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; width: 65pt; text-align: left;\" align=\"right\" width=\"87\" height=\"21\">0.6518</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.6042</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.3394</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.4215</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.9254</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.4672</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.5289</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.3725</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.5126</td>\n</tr>\n<tr style=\"height: 16.0pt;\">\n<td class=\"xl63\" style=\"height: 16pt; text-align: left;\" align=\"right\" height=\"21\">0.7957</td>\n</tr>\n</tbody>\n</table>\n<p><br />Compute the value of \\(\\alpha\\) that maximizes the likelihood of the data. Report the value of&nbsp;\\(\\alpha^2\\).</p>",
+      "is_live": true,
+      "version": 73,
+      "mode": "numerical",
+      "content_id": 612
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:41:49.037Z",
+      "answers": [
+        {
+          "answer": "0.4845",
+          "is_numeric": true,
+          "id": 7419,
+          "answer_margin": 0.001,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. First find an expression for the log posterior of \\alpha^2, then differentiate and set to zero. Note the Normal prior is on \\alpha, not \\alpha^2.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 613,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "MAP: Guttenberg Distribution [2 pts]",
+      "created_at": "2017-01-23T05:41:49.034Z",
+      "choices": [],
+      "content": "<p>With the same data as the previous question drawn from the Guttenberg distribution, assuming a standard normal prior (\\(\\mu=0, \\sigma=1\\) ) over the values of \\(\\alpha\\), calculate the MAP estimate of \\(\\alpha\\). Report the value of \\(\\alpha^2\\).</p>",
+      "is_live": true,
+      "version": 73,
+      "mode": "numerical",
+      "content_id": 613
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-10-18T19:42:59.538Z",
+      "answers": [
+        {
+          "answer": "0.011",
+          "is_numeric": true,
+          "id": 7420,
+          "answer_margin": 0.001,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Apply Bayes' rule to get a probability of  0.011.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 614,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Bayes' Rule for Medical Diagnosis [2 pts]",
+      "created_at": "2017-01-23T05:43:41.480Z",
+      "choices": [],
+      "content": "<p>Questions 21 and 22 refer to the following scenario. Suppose that the probability for an average person to have cancer is 0.007. Someone decided to take a medical test for cancer. The outcome of the test can either be positive (cancer) or negative (no cancer). The test is not perfect -&shy;&shy; among people who have cancer, the test comes back negative 5% of the time. Among people who don&rsquo;t have cancer, the test comes back positive 3% of the time. For the following questions, you should assume that the test results are independent of each other conditioned on the true state (\"cancer\" or \"no cancer\").</p>\n<p>The first test returned positive, and the person decided to do a second test. The second test returned negative. What is your belief that this person has cancer?</p>",
+      "is_live": true,
+      "version": 69,
+      "mode": "numerical",
+      "content_id": 614
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-10-18T19:42:59.562Z",
+      "answers": [
+        {
+          "answer": "0.011",
+          "is_numeric": true,
+          "id": 7421,
+          "answer_margin": 0.001,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Apply Bayes' rule to get a probability of 0.011. The order of the tests does not matter.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 615,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Bayes' Rule for Medical Diagnosis [2 pts]",
+      "created_at": "2017-01-23T05:44:51.355Z",
+      "choices": [],
+      "content": "<p>In the same scenario as the previous question, suppose that this time the first test returned negative, while the second test came out positive. What would your belief be that the person has cancer in this case?</p>",
+      "is_live": true,
+      "version": 67,
+      "mode": "numerical",
+      "content_id": 615
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:47:12.756Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 617,
+      "question_weight": 1,
+      "category_id": 3,
+      "title": "MLE and MAP [1 pt]",
+      "created_at": "2017-01-23T05:47:12.750Z",
+      "choices": [
+        {
+          "answer": "True",
+          "is_correct": true,
+          "id": 3801,
+          "feedback": "Correct!"
+        },
+        {
+          "answer": "False",
+          "is_correct": false,
+          "id": 3802,
+          "feedback": "Incorrect. The effect of the prior on the posterior probabilities diminishes as more data is collected, and eventually the MAP estimate converges to the MLE."
+        }
+      ],
+      "content": "<p>As the amount of data increases, a MAP estimate computed with a non&shy;zero prior will converge to the MLE.</p>",
+      "is_live": true,
+      "version": 64,
+      "mode": "true",
+      "content_id": 617
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:51:17.426Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 620,
+      "question_weight": 1,
+      "category_id": 3,
+      "title": "Overfitting [1 pt]",
+      "created_at": "2017-01-23T05:51:17.423Z",
+      "choices": [
+        {
+          "answer": "True",
+          "is_correct": true,
+          "id": 3807,
+          "feedback": "Correct!"
+        },
+        {
+          "answer": "False",
+          "is_correct": false,
+          "id": 3808,
+          "feedback": "Incorrect. Adding a prior can reduce overfitting small data sets."
+        }
+      ],
+      "content": "<p>One reason that the MAP might be preferred over the MLE is that the MLE can have a tendency to overfit small amounts of data.</p>",
+      "is_live": true,
+      "version": 64,
+      "mode": "true",
+      "content_id": 620
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T21:54:05.152Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 643,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Naive Bayes Multiple Choice Questions: Problem 2.1 [2 pts]",
+      "created_at": "2017-01-24T21:54:05.149Z",
+      "choices": [
+        {
+          "answer": "\\(V\\)",
+          "is_correct": false,
+          "id": 4085,
+          "feedback": "Incorrect. We need one parameter for each P(Xw|Y = y), for each of the two classes. We also need one parameter for estimating P(Y = y) (Since it is a binary case, estimating probability of one class is sufficient). Total number of parameters needed is 2V + 1."
+        },
+        {
+          "answer": "\\(2V\\)",
+          "is_correct": false,
+          "id": 4086,
+          "feedback": "Incorrect. We need one parameter for each P(Xw|Y = y), for each of the two classes. We also need one parameter for estimating P(Y = y) (Since it is a binary case, estimating probability of one class is sufficient). Total number of parameters needed is 2V + 1."
+        },
+        {
+          "answer": "\\(V+1\\)",
+          "is_correct": false,
+          "id": 4087,
+          "feedback": "Incorrect. We need one parameter for each P(Xw|Y = y), for each of the two classes. We also need one parameter for estimating P(Y = y) (Since it is a binary case, estimating probability of one class is sufficient). Total number of parameters needed is 2V + 1."
+        },
+        {
+          "answer": "\\(2V + 1\\)",
+          "is_correct": true,
+          "id": 4088,
+          "feedback": "Correct!"
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>How many parameters will the model need under the Naive Bayes assumption, assuming that \\(P(X_w=x_w|Y=y)\\) and \\(P(Y=y)\\) are both Bernoulli distributions? All answers are shown as&nbsp;a function of the vocabulary size, \\(V\\).</p>",
+      "is_live": true,
+      "version": 53,
+      "mode": "multiple",
+      "content_id": 643
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T22:01:21.177Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 644,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Naive Bayes Multiple Choice Questions: Problem 2.2 [2 pts]",
+      "created_at": "2017-01-24T22:01:21.174Z",
+      "choices": [
+        {
+          "answer": "\\(2V\\)",
+          "is_correct": false,
+          "id": 4089,
+          "feedback": "Incorrect. There are (2(2^V-1)+1 parameters to learn."
+        },
+        {
+          "answer": "\\(2^V\\)",
+          "is_correct": false,
+          "id": 4090,
+          "feedback": "Incorrect. There are (2(2^V-1)+1 parameters to learn."
+        },
+        {
+          "answer": "\\(2(2^V-1)+1\\)",
+          "is_correct": true,
+          "id": 4091,
+          "feedback": "Correct!"
+        },
+        {
+          "answer": "\\(2^{2V+1}\\)",
+          "is_correct": false,
+          "id": 4092,
+          "feedback": "Incorrect. There are (2(2^V-1)+1 parameters to learn."
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>How many parameters (still as a function of \\(V\\)) will the model need if we do not make the Naive Bayes assumption, assuming \\(P(Y=y)\\) is Bernoulli again and \\(P(\\mathbf{X}=\\mathbf{x}|Y=y)\\) is a categorical distribution?</p>",
+      "is_live": true,
+      "version": 63,
+      "mode": "multiple",
+      "content_id": 644
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-25T05:20:36.109Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 646,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Naive Bayes Multiple Choice Questions: Problem 2.8 [6 pts]",
+      "created_at": "2017-01-25T05:20:36.106Z",
+      "choices": [
+        {
+          "answer": "\\(\\alpha=2, \\beta=5\\)",
+          "is_correct": true,
+          "id": 4093,
+          "feedback": "Correct!"
+        },
+        {
+          "answer": "\\(\\alpha=5, \\beta=2\\)",
+          "is_correct": false,
+          "id": 4094,
+          "feedback": "Incorrect. Which parameter values generate more probability density in the given interval?"
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>Which values of \\(\\alpha\\) and \\(\\beta\\) make more sense if we strongly believe the true value of \\(\\theta_{yw}\\) lies in the interval \\([0.1, 0.3]\\)?</p>",
+      "is_live": true,
+      "version": 50,
+      "mode": "multiple",
+      "content_id": 646
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-25T05:25:32.434Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 647,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Naive Bayes Multiple Choice Questions: Problem 2.9 [6 pts]",
+      "created_at": "2017-01-25T05:25:32.430Z",
+      "choices": [
+        {
+          "answer": "\\(\\alpha=2, \\beta=5\\)",
+          "is_correct": true,
+          "id": 4095,
+          "feedback": "Correct!"
+        },
+        {
+          "answer": "\\(\\alpha=5, \\beta=2\\)",
+          "is_correct": false,
+          "id": 4096,
+          "feedback": "Incorrect. Double-check your NB_XGivenY, NB_YPrior, and NB_Classify functions."
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<div>Train your classifier on the data contained in XTrain and yTrain for both parameter settings in the previous problem. Then, use the learned classifier to predict the labels for the article feature vectors in XTest. Based on the classification error on the test set, which parameter settings were a better choice for the prior on</div>\n<div>\\(\\theta_{yw}\\)?</div>",
+      "is_live": true,
+      "version": 49,
+      "mode": "multiple",
+      "content_id": 647
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-25T05:35:02.499Z",
+      "answers": [
+        {
+          "answer": "0.290",
+          "is_numeric": true,
+          "id": 7422,
+          "answer_margin": 0.01,
+          "feedback": "Correct!"
+        }
+      ],
+      "default_feedback": "Incorrect. Correct classification error is 0.29. Double-check your NB_XGivenY, NB_YPrior, and NB_Classify functions.",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 648,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Naive Bayes Multiple Choice Questions: Problem 2.10 [4 pts]",
+      "created_at": "2017-01-25T05:35:02.495Z",
+      "choices": [],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<div>Set \\(\\alpha=2\\) and \\(\\beta=5\\) as in the first experiment, but train your classifier using the smaller training set XTrainSmall and yTrainSmall. Report your classification&nbsp;error on the test set below.</div>",
+      "is_live": true,
+      "version": 50,
+      "mode": "numerical",
+      "content_id": 648
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-25T05:39:33.129Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 649,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Naive Bayes Multiple Choice Questions: Problem 2.10 (continued) [2 pts]",
+      "created_at": "2017-01-25T05:39:33.125Z",
+      "choices": [
+        {
+          "answer": "Smaller test error with classifier trained on smaller training set.",
+          "is_correct": false,
+          "id": 4097,
+          "feedback": "Incorrect. The test error should be larger when training on the smaller training set."
+        },
+        {
+          "answer": "Larger test error with classifier trained on smaller training set.",
+          "is_correct": true,
+          "id": 4098,
+          "feedback": "Correct!"
+        },
+        {
+          "answer": "Test errors were equal for both classifiers.",
+          "is_correct": false,
+          "id": 4099,
+          "feedback": "Incorrect. The test error should be larger when training on the smaller training set."
+        }
+      ],
+      "content": "<p>How does the test error from the smaller training set compare to the test error from the larger data set with&nbsp;the same choice of \\(\\alpha\\) and \\(\\beta\\)?</p>",
+      "is_live": true,
+      "version": 49,
+      "mode": "multiple",
+      "content_id": 649
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:54:05.709Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 621,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Collaboration Policy Questions [0 pts]",
+      "created_at": "2017-01-23T05:54:05.705Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 3809,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": true,
+          "id": 3810,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Did you receive any help whatsoever from anyone in solving this assignment?</p>",
+      "is_live": true,
+      "version": 63,
+      "mode": "multiple",
+      "content_id": 621
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:55:19.455Z",
+      "answers": [
+        {
+          "answer": "",
+          "is_numeric": false,
+          "id": 7423,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 622,
+      "question_weight": 1,
+      "category_id": 4,
+      "title": "Collaboration Policy Questions [0 pts]",
+      "created_at": "2017-01-23T05:55:19.451Z",
+      "choices": [],
+      "content": "<p>If you answered Yes on the previous question, please give full details below (e.g. &ldquo;Jane Doe explained to me what is asked in Question 3.4&rdquo;).</p>",
+      "is_live": true,
+      "version": 63,
+      "mode": "short",
+      "content_id": 622
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:56:42.057Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 623,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Collaboration Policy Questions [0 pts]",
+      "created_at": "2017-01-23T05:56:42.053Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 3811,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": true,
+          "id": 3812,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Did you give any help whatsoever to anyone in solving this assignment?</p>",
+      "is_live": true,
+      "version": 61,
+      "mode": "multiple",
+      "content_id": 623
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:58:07.336Z",
+      "answers": [
+        {
+          "answer": "",
+          "is_numeric": false,
+          "id": 7424,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 624,
+      "question_weight": 1,
+      "category_id": 4,
+      "title": "Collaboration Policy Questions [0 pts]",
+      "created_at": "2017-01-23T05:58:07.329Z",
+      "choices": [],
+      "content": "<p>If you answered Yes on the previous question, please give full details below (e.g. &ldquo;I pointed Joe Smith to section 2.3 since he didn&rsquo;t know how to proceed with Question 2&rdquo;).</p>",
+      "is_live": true,
+      "version": 62,
+      "mode": "short",
+      "content_id": 624
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T05:59:54.248Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 625,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Collaboration Policy Questions [0 pts]",
+      "created_at": "2017-01-23T05:59:54.244Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 3813,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": true,
+          "id": 3814,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Did you find or come across code that implements any part of this assignment?</p>",
+      "is_live": true,
+      "version": 61,
+      "mode": "multiple",
+      "content_id": 625
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T06:01:27.365Z",
+      "answers": [
+        {
+          "answer": "",
+          "is_numeric": false,
+          "id": 7425,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 626,
+      "question_weight": 1,
+      "category_id": 4,
+      "title": "Collaboration Policy Questions [0 pts]",
+      "created_at": "2017-01-23T06:01:27.363Z",
+      "choices": [],
+      "content": "<p>If you answered Yes on the previous question, please give full details below (book &amp; page, URL &amp; location within the page, etc.).</p>",
+      "is_live": true,
+      "version": 61,
+      "mode": "short",
+      "content_id": 626
+    }
+  ],
+  "is_public": false,
+  "delayed_feedback": false,
+  "late_day_buffer": 10,
+  "content_hash": "0",
+  "late_days": false,
+  "id": 112
+}
+            

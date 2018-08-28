@@ -1,0 +1,406 @@
+  {
+  "due_date": "2017-02-05T22:30:00Z",
+  "max_attempts_for_credit": 10,
+  "due_date_raw": "2017-02-05T17:30:00Z",
+  "in_practice_mode": true,
+  "group_id": 12,
+  "author": 23,
+  "views": 0,
+  "title": "Homework 1: Programming",
+  "show_credit": true,
+  "content": "test",
+  "course": 12,
+  "is_live": true,
+  "version": 9,
+  "is_admin": true,
+  "questions": [
+    {
+      "title": "Note",
+      "created_at": "2017-01-24T20:30:26.568Z",
+      "updated_at": "2017-01-24T20:30:26.570Z",
+      "content": "<p>For all pseudo-code, assume 0-indexing unless otherwise noted.</p>",
+      "is_live": true,
+      "version": 0,
+      "content_type": "text",
+      "content_hash": "0",
+      "content_id": 422,
+      "id": 422
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T00:47:59.842Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 596,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Debugging",
+      "created_at": "2017-01-23T00:47:59.839Z",
+      "choices": [
+        {
+          "answer": "'cat', 'act'",
+          "is_correct": false,
+          "id": 3719,
+          "feedback": ""
+        },
+        {
+          "answer": "'at', 'cat'",
+          "is_correct": false,
+          "id": 3720,
+          "feedback": ""
+        },
+        {
+          "answer": "'aact', 'catt'",
+          "is_correct": true,
+          "id": 3721,
+          "feedback": ""
+        },
+        {
+          "answer": "'kat', 'cat'",
+          "is_correct": false,
+          "id": 3722,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Pat wants to write a function that compares two strings to see if they are anagrams (eg have the same characters, but possibly in different orders, such as 'cat' and 'act').</p>\n<p>&nbsp;</p>\n<p>Pat writes the following pseduo-code:</p>\n<p><strong>1</strong> &nbsp; isAnagram(str1, str2):<br /><strong>2</strong> &nbsp; &nbsp; &nbsp; if length(str1) != length(str2):<br /><strong>3</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return False<br /><strong>4</strong>&nbsp; &nbsp; &nbsp; &nbsp;i=0<br /><strong>5</strong> &nbsp; &nbsp; &nbsp; while i &lt; length(str1):<br /><strong>6</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if str1[i] not in str2:<br /><strong>7</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return False<br /><strong>8</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i++<br /><strong>9</strong> &nbsp; &nbsp; &nbsp; &nbsp;return True</p>\n<p>He wants it to return true if and only if the two input strings are comprised of the exact same characters- which of these inputs is going to return an unexpected output?</p>\n<p>&nbsp;</p>",
+      "is_live": true,
+      "version": 13,
+      "mode": "multiple",
+      "content_id": 596
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-23T01:09:01.937Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 597,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Optimization",
+      "created_at": "2017-01-23T01:09:01.933Z",
+      "choices": [
+        {
+          "answer": "Use dynamic programming",
+          "is_correct": true,
+          "id": 3723,
+          "feedback": ""
+        },
+        {
+          "answer": "Use a different programming language",
+          "is_correct": false,
+          "id": 3724,
+          "feedback": ""
+        },
+        {
+          "answer": "Fix a logical error in the program",
+          "is_correct": false,
+          "id": 3725,
+          "feedback": ""
+        },
+        {
+          "answer": "Use two threads in parallel programming",
+          "is_correct": false,
+          "id": 3726,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Billie wants to write a function that given a non-negative integer <em>i</em> will calculate&nbsp;<em>i</em> factorial (<em>i</em>!). (Note 0!=1, 1!=1).</p>\n<p>She writes the following pseudo-code:</p>\n<p><strong>1</strong> &nbsp; fact(x):<br /><strong>2</strong> &nbsp; &nbsp; &nbsp; if x==0 or x==1:<br /><strong>3</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return 1<br /><strong>4</strong> &nbsp; &nbsp; &nbsp; else:<br /><strong>5</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return x*fact(x-1)</p>\n<p>But when she implements it and runs fact(20000) she gets an&nbsp;error. How can she solve this?<br /><br />(Assume you can store any int in constant space.)</p>",
+      "is_live": true,
+      "version": 13,
+      "mode": "multiple",
+      "content_id": 597
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T20:43:54.411Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 635,
+      "question_weight": 1,
+      "category_id": 3,
+      "title": "Optimization",
+      "created_at": "2017-01-24T20:43:54.407Z",
+      "choices": [
+        {
+          "answer": "True",
+          "is_correct": true,
+          "id": 3961,
+          "feedback": ""
+        },
+        {
+          "answer": "False",
+          "is_correct": false,
+          "id": 3962,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>True or False: It is possible to implement fact(x) in a way that uses constant space. (Assume you can store any int in constant space.)</p>",
+      "is_live": true,
+      "version": 9,
+      "mode": "true",
+      "content_id": 635
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T17:43:16.293Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 630,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Fun with Functions",
+      "created_at": "2017-01-24T17:43:16.290Z",
+      "choices": [
+        {
+          "answer": "Recursion",
+          "is_correct": true,
+          "id": 3963,
+          "feedback": ""
+        },
+        {
+          "answer": "Dynamic programming",
+          "is_correct": false,
+          "id": 3964,
+          "feedback": ""
+        },
+        {
+          "answer": "Iteration",
+          "is_correct": false,
+          "id": 3965,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Mary wrote the following pseudo-code:</p>\n<p><strong>1</strong> &nbsp; &nbsp;myFun(x):<br /><strong>2</strong> &nbsp; &nbsp; &nbsp; &nbsp; if x is an empty string<br /><strong>3</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return an empty string<br /><strong>4</strong> &nbsp; &nbsp; else:<br /><strong>5</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;y=letter following x[0] in the alphabet<br /><strong>6</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;z=myFun(substring of x from x[1] to end)<br /><strong>7</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return concatenation of y and z</p>\n<p>Which technique is Mary using?</p>",
+      "is_live": true,
+      "version": 17,
+      "mode": "multiple",
+      "content_id": 630
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T17:50:53.191Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 631,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Fun with Functions",
+      "created_at": "2017-01-24T17:50:53.188Z",
+      "choices": [
+        {
+          "answer": "gdkkn",
+          "is_correct": false,
+          "id": 3967,
+          "feedback": ""
+        },
+        {
+          "answer": "nkkdg",
+          "is_correct": false,
+          "id": 3968,
+          "feedback": ""
+        },
+        {
+          "answer": "ifmmp",
+          "is_correct": true,
+          "id": 3969,
+          "feedback": ""
+        },
+        {
+          "answer": "pmmfi",
+          "is_correct": false,
+          "id": 3970,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>If Mary implements her pseudo-code and runs myFun('hello'), which output will she get?</p>",
+      "is_live": true,
+      "version": 8,
+      "mode": "multiple",
+      "content_id": 631
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T17:53:33.889Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 632,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Fun with Functions",
+      "created_at": "2017-01-24T17:53:33.885Z",
+      "choices": [
+        {
+          "answer": "Recursion",
+          "is_correct": false,
+          "id": 3971,
+          "feedback": ""
+        },
+        {
+          "answer": "Dynamic Programming",
+          "is_correct": false,
+          "id": 3972,
+          "feedback": ""
+        },
+        {
+          "answer": "Iteration",
+          "is_correct": true,
+          "id": 3973,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Which technique, other than the one she is using, could Mary&nbsp;use instead to implement a function that would do the same thing as her current one?</p>",
+      "is_live": true,
+      "version": 11,
+      "mode": "multiple",
+      "content_id": 632
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T19:36:51.775Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 633,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Debugging",
+      "created_at": "2017-01-24T19:36:51.771Z",
+      "choices": [
+        {
+          "answer": "[1,1,1,2,2,3,3,4,4]",
+          "is_correct": false,
+          "id": 3975,
+          "feedback": ""
+        },
+        {
+          "answer": "[1,1,2,2,2,2,3,3,3,3,4,4]",
+          "is_correct": false,
+          "id": 3976,
+          "feedback": ""
+        },
+        {
+          "answer": "[1,2,3,2,3,4]",
+          "is_correct": false,
+          "id": 3977,
+          "feedback": ""
+        },
+        {
+          "answer": "[1,1,1,2,2,2,2,3,3]",
+          "is_correct": true,
+          "id": 3978,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Manny wants to create a function that takes two sorted arrays as input and merges them into a single sorted array. For example, given the arrays [1,2,3] and [2,3,4] it should output [1,2,2,3,3,4]. Manny writes the following pseudo-code:</p>\n<p><strong>1</strong> &nbsp; &nbsp; arrayMerge(a,b):<br /><strong>2</strong> &nbsp; &nbsp; &nbsp; &nbsp;output=[] \\\\create an empty array to hold the&nbsp;output<br /><strong>3</strong> &nbsp; &nbsp; &nbsp; &nbsp;i=0; j=0<br /><strong>4</strong> &nbsp; &nbsp; &nbsp; &nbsp;while i &lt; length(a):<br /><strong>5</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while j &lt; length(b):<br /><strong>6</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if a[i]&lt;b[j]:<br /><strong>7</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; append(output,a[i])<br /><strong>8</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:<br /><strong>9</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; append(output,b[j])<br /><strong>10</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; j++<br /><strong>11</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; j=0<br /><strong>12</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i++<br /><strong>13</strong>&nbsp; &nbsp; &nbsp; &nbsp;return&nbsp;output array</p>\n<p>Where append(array, value) is a function that appends<em> value</em> to the end of <em>array</em> (in place).</p>\n<p>But&nbsp;when he implements it, it does not work as expected. Which output will Manny get for the input arrays [1,2,3] and [2,3,4] using his implementation?</p>",
+      "is_live": true,
+      "version": 22,
+      "mode": "multiple",
+      "content_id": 633
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T20:32:06.604Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 634,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Debugging",
+      "created_at": "2017-01-24T20:32:06.601Z",
+      "choices": [
+        {
+          "answer": "[1,2,3,4,3,2]",
+          "is_correct": false,
+          "id": 3979,
+          "feedback": ""
+        },
+        {
+          "answer": "[1,2,3,3,2,4]",
+          "is_correct": false,
+          "id": 3980,
+          "feedback": ""
+        },
+        {
+          "answer": "[1,2,3,2,3,4]",
+          "is_correct": true,
+          "id": 3981,
+          "feedback": ""
+        },
+        {
+          "answer": "[1,2,3]",
+          "is_correct": false,
+          "id": 3982,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Manny's friend gives him a hint for how he can successfully do what he intended to in the previous problem. She says that he should start from the ends of the arrays, rather than the beginnings.</p>\n<p>Manny now writes the following pseudo-code:</p>\n<p><strong>1</strong> &nbsp; &nbsp; &nbsp;arrayMerge(a,b):<br /><strong>2</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;output=[] \\\\create an empty array to hold the&nbsp;output<br /><strong>3</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i=length(a)-1<br /><strong>4</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;j=length(b)-1<br /><strong>5</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;while i &gt;= 0 and j &gt;= 0:<br /><strong>6</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if a[i]&lt;b[j]:<br /><strong>7</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;insert(output, a[i], 0)<br /><strong>8</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i=i-1<br /><strong>9</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;else:<br /><strong>10</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;insert(output, b[j], 0)<br /><strong>11</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;j=j-1<br /><strong>12</strong> &nbsp; &nbsp; &nbsp; &nbsp; while j&gt;=0:<br /><strong>13</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;insert(output, b[j], length(a))<br /><strong>14</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;j=j-1<br /><strong>15</strong> &nbsp; &nbsp; &nbsp; &nbsp; return&nbsp;output array</p>\n<p>Where insert(array, value, q) is a function that inserts <em>value</em> at index <em>q</em> of <em>array</em> (in place).</p>\n<p>He implements this and finds that it still isn't quite right. Now what output will he get for the input arrays&nbsp;[1,2,3] and [2,3,4]?</p>",
+      "is_live": true,
+      "version": 26,
+      "mode": "multiple",
+      "content_id": 634
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T21:51:13.942Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 642,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Debugging",
+      "created_at": "2017-01-24T21:51:13.939Z",
+      "choices": [
+        {
+          "answer": "Change line 13 to \"insert b[j] at index length(a)+j of the output array\"",
+          "is_correct": false,
+          "id": 4016,
+          "feedback": ""
+        },
+        {
+          "answer": "Change lines 7 and 10 to append to the end of the array",
+          "is_correct": false,
+          "id": 4017,
+          "feedback": ""
+        },
+        {
+          "answer": "Change line 4 to \"j=length(a)+length(b)-2\"",
+          "is_correct": false,
+          "id": 4018,
+          "feedback": ""
+        },
+        {
+          "answer": "Any of these will work",
+          "is_correct": false,
+          "id": 4019,
+          "feedback": ""
+        },
+        {
+          "answer": "None of these will work",
+          "is_correct": true,
+          "id": 4020,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>How could Manny fix his while-loop implementation from the previous question to make a function that successfully merges two sorted arrays into one sorted array?</p>",
+      "is_live": true,
+      "version": 9,
+      "mode": "multiple",
+      "content_id": 642
+    }
+  ],
+  "is_public": false,
+  "delayed_feedback": false,
+  "late_day_buffer": 10,
+  "content_hash": "0",
+  "late_days": false,
+  "id": 116
+}
+            

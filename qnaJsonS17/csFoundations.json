@@ -1,0 +1,369 @@
+  {
+  "due_date": "2017-02-05T22:30:00Z",
+  "max_attempts_for_credit": 10,
+  "due_date_raw": "2017-02-05T17:30:00Z",
+  "in_practice_mode": true,
+  "group_id": 12,
+  "author": 23,
+  "views": 0,
+  "title": "Homework 1: CS Foundations",
+  "show_credit": true,
+  "content": "test",
+  "course": 12,
+  "is_live": true,
+  "version": 13,
+  "is_admin": true,
+  "questions": [
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-22T16:03:17.358Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 591,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Big O Notation",
+      "created_at": "2017-01-22T16:03:17.355Z",
+      "choices": [
+        {
+          "answer": "\\(f(n)=O(g(n))\\)",
+          "is_correct": false,
+          "id": 3687,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(g(n)=O(f(n))\\)",
+          "is_correct": true,
+          "id": 3688,
+          "feedback": ""
+        },
+        {
+          "answer": "Both",
+          "is_correct": false,
+          "id": 3689,
+          "feedback": ""
+        },
+        {
+          "answer": "Neither",
+          "is_correct": false,
+          "id": 3690,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>If \\(f(n)=n^4\\) and \\(g(n)=n^3\\) which of the following are true?</p>",
+      "is_live": true,
+      "version": 14,
+      "mode": "multiple",
+      "content_id": 591
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-22T16:09:17.232Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 592,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Big O Notation",
+      "created_at": "2017-01-22T16:09:17.229Z",
+      "choices": [
+        {
+          "answer": "\\(f(n))=O(g(n))\\)",
+          "is_correct": true,
+          "id": 3699,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(g(n))=O(f(n))\\)",
+          "is_correct": false,
+          "id": 3700,
+          "feedback": ""
+        },
+        {
+          "answer": "Both",
+          "is_correct": false,
+          "id": 3701,
+          "feedback": ""
+        },
+        {
+          "answer": "Neither",
+          "is_correct": false,
+          "id": 3702,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>If \\(f(n)=\\sqrt n\\) and \\(g(n)=n^2\\) which of the following are true?</p>",
+      "is_live": true,
+      "version": 13,
+      "mode": "multiple",
+      "content_id": 592
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-22T16:17:53.488Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 593,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Big Omega Notation",
+      "created_at": "2017-01-22T16:17:53.484Z",
+      "choices": [
+        {
+          "answer": "\\(f(n))=\\Omega(g(n))\\)",
+          "is_correct": false,
+          "id": 3703,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(g(n))=\\Omega(f(n))\\)",
+          "is_correct": true,
+          "id": 3704,
+          "feedback": ""
+        },
+        {
+          "answer": "Both",
+          "is_correct": false,
+          "id": 3705,
+          "feedback": ""
+        },
+        {
+          "answer": "Neither",
+          "is_correct": false,
+          "id": 3706,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>If \\(f(n)=ln (n)\\) and \\(g(n)=n^2\\) which of the following are true?</p>",
+      "is_live": true,
+      "version": 13,
+      "mode": "multiple",
+      "content_id": 593
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T16:43:45.045Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 628,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Big Theta",
+      "created_at": "2017-01-24T16:43:45.042Z",
+      "choices": [
+        {
+          "answer": "\\(f(n)=O(n^2)\\) and \\(f(n)=\\Omega(\\frac{n}{2})\\)",
+          "is_correct": false,
+          "id": 3853,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(f(n)=O(2n)\\) and \\(f(n)=\\Omega(\\frac{n}{2})\\)",
+          "is_correct": true,
+          "id": 3854,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(f(n)=O(2n)\\) and \\(f(n)=\\Omega(\\sqrt n)\\)",
+          "is_correct": false,
+          "id": 3855,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(f(n)=O(n^2)\\) and \\(f(n)=\\Omega(\\sqrt n)\\)",
+          "is_correct": false,
+          "id": 3856,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Which of these represents a case where \\(f(n)=\\Theta(n)\\) for a function f?</p>",
+      "is_live": true,
+      "version": 15,
+      "mode": "multiple",
+      "content_id": 628
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-22T15:56:51.731Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 590,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Algorithms",
+      "created_at": "2017-01-22T15:56:51.727Z",
+      "choices": [
+        {
+          "answer": "Bubble sort",
+          "is_correct": false,
+          "id": 3679,
+          "feedback": ""
+        },
+        {
+          "answer": "Insertion sort",
+          "is_correct": false,
+          "id": 3680,
+          "feedback": ""
+        },
+        {
+          "answer": "Merge sort",
+          "is_correct": true,
+          "id": 3681,
+          "feedback": ""
+        },
+        {
+          "answer": "Selection sort",
+          "is_correct": false,
+          "id": 3682,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Given an unsorted array of integers, which of these sorting algorithms is the most efficient way to sort it in the average case?</p>",
+      "is_live": true,
+      "version": 15,
+      "mode": "multiple",
+      "content_id": 590
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-22T16:21:00.030Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 594,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Algorithms",
+      "created_at": "2017-01-22T16:21:00.028Z",
+      "choices": [
+        {
+          "answer": "\\(O(n^2)\\)",
+          "is_correct": false,
+          "id": 3707,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(O(n)\\)",
+          "is_correct": false,
+          "id": 3708,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(O(log(n))\\)",
+          "is_correct": false,
+          "id": 3709,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(O(nlog(n))\\)",
+          "is_correct": true,
+          "id": 3710,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>What is the average case run time for the answer to the previous question?</p>",
+      "is_live": true,
+      "version": 10,
+      "mode": "multiple",
+      "content_id": 594
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-22T16:39:11.172Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 595,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "DFS vs BFS",
+      "created_at": "2017-01-22T16:39:11.168Z",
+      "choices": [
+        {
+          "answer": "You know the person you are looking for is one of the first 5 in line for the throne",
+          "is_correct": true,
+          "id": 3715,
+          "feedback": ""
+        },
+        {
+          "answer": "You know the person you are looking for is female",
+          "is_correct": false,
+          "id": 3716,
+          "feedback": ""
+        },
+        {
+          "answer": "You know the person you are looking for is a prince or princess",
+          "is_correct": false,
+          "id": 3717,
+          "feedback": ""
+        },
+        {
+          "answer": "You know the person you are looking for is a child",
+          "is_correct": false,
+          "id": 3718,
+          "feedback": ""
+        }
+      ],
+      "content": "<p><img src=\"https://s3-us-west-2.amazonaws.com/qna.prod/23/1485273685_famTree.jpg\" width=\"355\" height=\"357\" /></p>\n<p>&nbsp;</p>\n<p>Given the above tree of the British royal family, and assuming each node contains some information on the person it represents, say you are given a piece of information and want to find the person it describes by searching the tree. In which situation would you prefer to use depth-first-search rather than breadth-first? Assume we search left-to-right and top-down.</p>\n<p>(Note: numbers indicate place in line for the throne)</p>",
+      "is_live": true,
+      "version": 16,
+      "mode": "multiple",
+      "content_id": 595
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-01-24T16:57:11.698Z",
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 629,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "DFS",
+      "created_at": "2017-01-24T16:57:11.694Z",
+      "choices": [
+        {
+          "answer": "3",
+          "is_correct": false,
+          "id": 3877,
+          "feedback": ""
+        },
+        {
+          "answer": "10",
+          "is_correct": false,
+          "id": 3878,
+          "feedback": ""
+        },
+        {
+          "answer": "15",
+          "is_correct": true,
+          "id": 3879,
+          "feedback": ""
+        },
+        {
+          "answer": "18",
+          "is_correct": false,
+          "id": 3880,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Using the tree from the previous question, how many nodes would depth-first-search visit in&nbsp;finding Princess Eugenie (including her node)?&nbsp;Again, assume we search left-to-right and top-down.</p>",
+      "is_live": true,
+      "version": 10,
+      "mode": "multiple",
+      "content_id": 629
+    }
+  ],
+  "is_public": false,
+  "delayed_feedback": false,
+  "late_day_buffer": 10,
+  "content_hash": "0",
+  "late_days": false,
+  "id": 115
+}
+            

@@ -1,0 +1,1522 @@
+   {
+  "due_date": "2017-03-10T04:59:00Z",
+  "max_attempts_for_credit": 10,
+  "due_date_raw": "2017-03-09T23:59:00Z",
+  "in_practice_mode": true,
+  "group_id": 12,
+  "author": 291,
+  "views": 0,
+  "title": "Homework 4: Regularization, Kernel, Perceptron and SVM",
+  "show_credit": true,
+  "content": "test",
+  "course": 12,
+  "is_live": true,
+  "version": 140,
+  "is_admin": true,
+  "questions": [
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T06:46:49.850Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 720,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Regularization [2 pts]",
+      "created_at": "2017-02-13T06:46:49.848Z",
+      "choices": [
+        {
+          "answer": "One of the goals of regularization is combatting underfitting",
+          "is_correct": false,
+          "id": 5286,
+          "feedback": ""
+        },
+        {
+          "answer": "The L-0 norm is rarely used in practice because it is non-differentiable and non-convex",
+          "is_correct": true,
+          "id": 5287,
+          "feedback": ""
+        },
+        {
+          "answer": "A model with regularization fits the training data better than a model without regularization",
+          "is_correct": false,
+          "id": 5288,
+          "feedback": ""
+        },
+        {
+          "answer": "One way to understand regularization is that it makes the learning algorithm prefer \"more complex\" solutions.",
+          "is_correct": false,
+          "id": 5289,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Which of the following is true about regularization?</p>",
+      "is_live": true,
+      "version": 111,
+      "mode": "multiple",
+      "content_id": 720
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T07:04:30.058Z",
+      "answers": [
+        {
+          "answer": "1",
+          "is_numeric": true,
+          "id": 7426,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 724,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Regularization [2 pts]",
+      "created_at": "2017-02-13T07:04:30.055Z",
+      "choices": [],
+      "content": "<p>For a \\(L^p\\) regularization penalty where \\(p\\) is a non-negative real value, what is the maximum value of \\(p\\) that can lead the minimization problem for \\(\\beta\\)</p>\n<p>$$\\min_\\beta f(\\beta) + \\lambda||\\beta||_p$$</p>\n<p>to a sparse solution?</p>",
+      "is_live": true,
+      "version": 122,
+      "mode": "numerical",
+      "content_id": 724
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T07:02:05.112Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 723,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Regularization [2 pts]",
+      "created_at": "2017-02-13T07:02:05.109Z",
+      "choices": [
+        {
+          "answer": "Larger \\(\\lambda\\) leads to a sparser solution of \\(\\beta\\) and a possible underfit of the data.",
+          "is_correct": true,
+          "id": 5290,
+          "feedback": ""
+        },
+        {
+          "answer": "Larger \\(\\lambda\\) leads to a sparser solution of \\(\\beta\\) and a possible overfit of the data.",
+          "is_correct": false,
+          "id": 5291,
+          "feedback": ""
+        },
+        {
+          "answer": "Larger \\(\\lambda\\) leads to a denser solution of \\(\\beta\\) and a possible underfit of the data.",
+          "is_correct": false,
+          "id": 5292,
+          "feedback": ""
+        },
+        {
+          "answer": "Larger \\(\\lambda\\) leads to a denser solution of \\(\\beta\\) and a possible overfitof the data.",
+          "is_correct": false,
+          "id": 5293,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>For a typical minimization problem with \\(L^1\\) regularization:</p>\n<p>$$\\min_\\beta f(\\beta) + \\lambda||\\beta||_1$$</p>\n<p>where \\(f\\) is the objective function.</p>\n<p>Which statement is&nbsp;true about \\(\\lambda\\)?</p>",
+      "is_live": true,
+      "version": 114,
+      "mode": "multiple",
+      "content_id": 723
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T07:24:05.090Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 725,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Regularization [2 pts]",
+      "created_at": "2017-02-13T07:24:05.089Z",
+      "choices": [
+        {
+          "answer": "Laplace distribution",
+          "is_correct": false,
+          "id": 5294,
+          "feedback": ""
+        },
+        {
+          "answer": "Normal distribution",
+          "is_correct": true,
+          "id": 5295,
+          "feedback": ""
+        },
+        {
+          "answer": "Exponential distribution",
+          "is_correct": false,
+          "id": 5296,
+          "feedback": ""
+        },
+        {
+          "answer": "Cauchy distribution",
+          "is_correct": false,
+          "id": 5297,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>In linear regression model,&nbsp;</p>\n<p>$$y_i = \\beta x_i + \\varepsilon_i$$</p>\n<p>where \\(\\varepsilon_i \\sim N(0, \\sigma)\\). Finding the \\(\\beta\\) which maximizes the likelihood of the data is equivalent to solving the following&nbsp;least square model:</p>\n<p>$$\\min_\\beta ||y_i - \\beta x_i||_2^2$$</p>\n<p>We can then add \\(L^2\\) regularization on the above formulation:</p>\n<p>$$\\min_\\beta ||y_i - \\beta x_i||_2^2 + \\lambda||\\beta||_2^2$$</p>\n<p>We can also solve the linear regression model by MAP estimation, assuming \\(\\beta\\) follows a certain distribution. Which among the following prior distribution for \\(\\beta\\) is equivalent to the optimization problem in \\(L^2\\) regularization?</p>",
+      "is_live": true,
+      "version": 116,
+      "mode": "multiple",
+      "content_id": 725
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T07:36:05.076Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 727,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Regularization [2 pts]",
+      "created_at": "2017-02-13T07:36:05.073Z",
+      "choices": [
+        {
+          "answer": "The variance increases",
+          "is_correct": false,
+          "id": 5298,
+          "feedback": ""
+        },
+        {
+          "answer": "The variance decreases",
+          "is_correct": true,
+          "id": 5299,
+          "feedback": ""
+        },
+        {
+          "answer": "The variance stays the same",
+          "is_correct": false,
+          "id": 5300,
+          "feedback": ""
+        },
+        {
+          "answer": "Depends on the value of \\(\\beta\\)",
+          "is_correct": false,
+          "id": 5301,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Following the above question, if \\(\\lambda\\) in the&nbsp;\\(L^2\\) regularized minimization formulation becomes larger, what does this mean to the variance of the prior distribution of the corresponding MAP estimation problem?</p>",
+      "is_live": true,
+      "version": 107,
+      "mode": "multiple",
+      "content_id": 727
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:11:00.665Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 691,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Kernels [2 pts]",
+      "created_at": "2017-02-12T19:11:00.684Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 5325,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": false,
+          "id": 5326,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Consider the following kernel function:</p>\n<p>\\[K(x, x') = \\begin{cases}{\\text{1, &nbsp;if } x = x'}\\\\ {\\text{0, &nbsp;otherwise}}\\end{cases}\\]</p>\n<p>Is this a legal kernel?</p>",
+      "is_live": true,
+      "version": 138,
+      "mode": "multiple",
+      "content_id": 691
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:11:00.686Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 688,
+      "question_weight": 1,
+      "category_id": 3,
+      "title": "Kernels [2 pts]",
+      "created_at": "2017-02-12T19:05:06.582Z",
+      "choices": [
+        {
+          "answer": "True",
+          "is_correct": true,
+          "id": 5345,
+          "feedback": ""
+        },
+        {
+          "answer": "False",
+          "is_correct": false,
+          "id": 5346,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Consider the following kernel function:</p>\n<p>\\[K(x, x') = \\begin{cases}{\\text{1, &nbsp;if } x = x'} \\\\{\\text{0, &nbsp;otherwise}}\\end{cases}\\]</p>\n<p>[True/False] In this kernel space, any labeling of points from any dataset X will be linearly separable.</p>",
+      "is_live": true,
+      "version": 141,
+      "mode": "true",
+      "content_id": 688
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:13:25.931Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 697,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Kernels [2 pts]",
+      "created_at": "2017-02-12T19:18:20.149Z",
+      "choices": [
+        {
+          "answer": "\\( (x_1z_1)^2 +(x_2z_2)^2 +(x_3z_3)^2 \\)",
+          "is_correct": false,
+          "id": 5327,
+          "feedback": ""
+        },
+        {
+          "answer": "\\( (x^T z)^3 \\)",
+          "is_correct": false,
+          "id": 5328,
+          "feedback": ""
+        },
+        {
+          "answer": "\\( (x^T z)^2 \\)",
+          "is_correct": true,
+          "id": 5329,
+          "feedback": ""
+        },
+        {
+          "answer": "\\( x^T z \\)",
+          "is_correct": false,
+          "id": 5330,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Suppose that input-space is three-dimensional, \\( x = (x_1, x_2, x_3)^T\\). The feature mapping is defined as - \\[\\phi(x) = (x_1^2, x_2^2, x_3^2, \\sqrt{2}x_1x_2, \\sqrt{2}x_1x_3,\\sqrt{2}x_2x_3)^T\\]</p>\n<p>What is the corresponding kernel function, i.e. \\(K(x,z)\\)?</p>",
+      "is_live": true,
+      "version": 136,
+      "mode": "multiple",
+      "content_id": 697
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T15:14:44.917Z",
+      "answers": [
+        {
+          "answer": "29",
+          "is_numeric": true,
+          "id": 7427,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 734,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Kernels [3 pts]",
+      "created_at": "2017-02-13T15:14:44.915Z",
+      "choices": [],
+      "content": "<p>Suppose that input-space is three-dimensional, \\( x = (x_1, x_2, x_3)^T\\). The feature mapping is defined as - \\[\\phi(x) = (x_1^2, x_2^2, x_3^2, \\sqrt{2}x_1x_2, \\sqrt{2}x_1x_3,\\sqrt{2}x_2x_3)^T\\]</p>\n<p>Suppose we want to compute the value of kernel function \\(K(x,z)\\) on two vectors \\(x,z \\in {\\mathbb{R}}^3\\). We want to check how many additions and multiplications are needed if you map the input vector to the feature space and then perform dot product on the mapped features. Report \\(\\alpha + \\beta\\), where \\(\\alpha\\) is the number of multiplications and&nbsp;\\(\\beta\\) is the number of additions.</p>\n<p>Note: Multiplication/Addition with constants should also be included in the counts.</p>",
+      "is_live": true,
+      "version": 105,
+      "mode": "numerical",
+      "content_id": 734
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:14:41.282Z",
+      "answers": [
+        {
+          "answer": "6",
+          "is_numeric": true,
+          "id": 7428,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 695,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Kernels [3 pts]",
+      "created_at": "2017-02-12T19:14:41.279Z",
+      "choices": [],
+      "content": "<p>Suppose that input-space is three-dimensional, \\( x = (x_1, x_2, x_3)^T\\). The feature mapping is defined as - \\[\\phi(x) = (x_1^2, x_2^2, x_3^2, \\sqrt{2}x_1x_2, \\sqrt{2}x_1x_3,\\sqrt{2}x_2x_3)^T\\]</p>\n<p>Suppose we want to compute the value of kernel function \\(K(x,z)\\) on two vectors \\(x,z \\in {\\mathbb{R}}^3\\).We want to check how many additions and multiplications are needed if you do the computation through the kernel function you derived&nbsp;above. Report \\(\\alpha + \\beta\\), where \\(\\alpha\\) is the number of multiplications and&nbsp;\\(\\beta\\) is the number of additions.</p>\n<p>Note: Multiplication/Addition with constants should also be included in the counts.</p>",
+      "is_live": true,
+      "version": 148,
+      "mode": "numerical",
+      "content_id": 695
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T07:44:43.908Z",
+      "answers": [
+        {
+          "answer": "0.25",
+          "is_numeric": true,
+          "id": 7429,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 728,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Kernels [3 pts]",
+      "created_at": "2017-02-13T07:44:43.905Z",
+      "choices": [],
+      "content": "<p>Suppose one dataset contains four data points in \\(R^1\\) space, as shown in the following figure.</p>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://s3-us-west-2.amazonaws.com/qna.prod/291/1487737833_Presentation2.png\" width=\"362\" height=\"73\" /></p>\n<p>Different shapes of the points indicate different labels. If we train a linear classifier on the dataset, what is the lowest training error for a linear classifier on \\(R^1\\)?</p>",
+      "is_live": true,
+      "version": 112,
+      "mode": "numerical",
+      "content_id": 728
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T07:48:08.343Z",
+      "answers": [
+        {
+          "answer": "0",
+          "is_numeric": true,
+          "id": 7430,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 729,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Kernels [3 pts]",
+      "created_at": "2017-02-13T07:48:08.340Z",
+      "choices": [],
+      "content": "<p>Follow the above question, if we use feature mapping \\(\\phi(x) = (x, x^2)\\) to project the data to the \\(R^2\\) space. Again we train a linear classifer on the projected dataset, what is the lowest traning error for a linear classifer on \\(R^2\\)?</p>",
+      "is_live": true,
+      "version": 129,
+      "mode": "numerical",
+      "content_id": 729
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:18:20.258Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 698,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Composition of kernels [1 pt]",
+      "created_at": "2017-02-12T19:18:20.256Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 4772,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": false,
+          "id": 4773,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>We want to see if it is possible to use previously-defined kernels to construct new ones. For this problem, we first look at the kernel \\(K(x,z) = \\alpha &lt;x,z&gt;\\), where \\(\\alpha\\) is a positive constant and the notation \\(&lt;x,z&gt;\\)&nbsp;indicates the dot product \\(x^T z\\).</p>\n<p>Is this kernel valid?</p>",
+      "is_live": true,
+      "version": 136,
+      "mode": "multiple",
+      "content_id": 698
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:18:20.276Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 699,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Composition of kernels [2 pts]",
+      "created_at": "2017-02-12T19:18:20.274Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 4774,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": false,
+          "id": 4775,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Is \\(K(x,z) = &lt;x,z&gt;^3 + (&lt;x,z&gt; + 1)^2\\), where the notation \\(&lt;x,z&gt;\\)&nbsp;indicates the dot product \\(x^T z\\), a valid kernel?</p>",
+      "is_live": true,
+      "version": 136,
+      "mode": "multiple",
+      "content_id": 699
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:17:10.210Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 696,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Composition of kernels [3 pts]",
+      "created_at": "2017-02-12T19:17:10.207Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 4776,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": false,
+          "id": 4777,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Is \\(K(x,z) = &lt;x,z&gt;^2 + exp(-\\|x\\|^2)exp(-\\|z\\|^2)\\), where the notation \\(&lt;x,z&gt;\\)&nbsp;indicates the dot product \\(x^T z\\), a valid kernal ?</p>",
+      "is_live": true,
+      "version": 137,
+      "mode": "multiple",
+      "content_id": 696
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:18:20.325Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 700,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Perceptron Algorithm [2 pts]",
+      "created_at": "2017-02-12T19:18:20.323Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": false,
+          "id": 4778,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": true,
+          "id": 4779,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Consider running the Perceptron algorithm on some sequence of examples S (an example is a data point and its label). Let S&prime; be the same set of examples as S, but presented in a different order.&nbsp;</p>\n<div class=\"page\" title=\"Page 6\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Does the Perceptron algorithm necessarily make the same number of mistakes on S as it does on S&prime;?</p>\n</div>\n</div>\n</div>",
+      "is_live": true,
+      "version": 136,
+      "mode": "multiple",
+      "content_id": 700
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:20:49.893Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 702,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Perceptron [2 pts]",
+      "created_at": "2017-02-12T19:20:49.890Z",
+      "choices": [
+        {
+          "answer": "AND function",
+          "is_correct": false,
+          "id": 4808,
+          "feedback": ""
+        },
+        {
+          "answer": "OR function",
+          "is_correct": false,
+          "id": 4809,
+          "feedback": ""
+        },
+        {
+          "answer": "XOR function",
+          "is_correct": true,
+          "id": 4810,
+          "feedback": ""
+        },
+        {
+          "answer": "None of the above",
+          "is_correct": false,
+          "id": 4811,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Which of the following functions is(are) not&nbsp;possible to implement with single layer perceptron where inputs \\(x_i \\in \\{0,1\\}\\) and prediction function is \\( y=h\\big(\\sum_i x_i*w_i + b\\big)\\) and \\(h(z) = \\begin{cases}{\\text{1, &nbsp;if } z \\geq 0} \\\\{\\text{0, &nbsp;otherwise}}\\end{cases}\\)</p>",
+      "is_live": true,
+      "version": 134,
+      "mode": "multiple",
+      "content_id": 702
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:22:18.510Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 703,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Perceptron [4 pts]",
+      "created_at": "2017-02-12T19:22:18.507Z",
+      "choices": [
+        {
+          "answer": "\\((w_0,w_1,b) = (1,1,2)\\)",
+          "is_correct": false,
+          "id": 4812,
+          "feedback": ""
+        },
+        {
+          "answer": "\\((w_0,w_1,b) = (1,1,-1)\\)",
+          "is_correct": true,
+          "id": 4813,
+          "feedback": ""
+        },
+        {
+          "answer": "\\((w_0,w_1,b) = (1,1,1)\\)",
+          "is_correct": false,
+          "id": 4814,
+          "feedback": ""
+        },
+        {
+          "answer": "None of the above",
+          "is_correct": false,
+          "id": 4815,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Consider a single layer perceptron where inputs \\(x_i \\in \\{0,1\\}\\) and prediction function is \\( y=h\\big(\\sum_i x_i*w_i + b\\big)\\) and \\(h(z) = \\begin{cases}{\\text{1, &nbsp;if } z \\geq 0} \\\\{\\text{0, &nbsp;otherwise}}\\end{cases}\\).</p>\n<p>For which among the following values of \\(w_0,w_1,\\) and \\(b\\), this will be equivalent to the \\(\\textbf{OR}\\) function?</p>",
+      "is_live": true,
+      "version": 135,
+      "mode": "multiple",
+      "content_id": 703
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:24:13.613Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 704,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM (Hard Margin) [2 pts]",
+      "created_at": "2017-02-12T19:24:13.610Z",
+      "choices": [
+        {
+          "answer": "\\(argmax_w\\)",
+          "is_correct": true,
+          "id": 4840,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(argmin_{f(x)}\\)",
+          "is_correct": false,
+          "id": 4841,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(max_n\\)",
+          "is_correct": false,
+          "id": 4842,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(min_w\\)",
+          "is_correct": false,
+          "id": 4843,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>In this problem, you will analyze SVM objective from large margin principle.<br />We use linear discriminant function, \\[f(x) = w^\\top x<br />\\] for classification:<br />We classify \\(x\\) into class -1 if \\(f(x) &lt; 0\\) and into class 1 otherwise. If the data is linearly separable, and f is the target function, then \\(y \\cdot f(x)\\) &gt; 0. <br />This fact allows us to define<br />\\[\\gamma = \\frac{y\\cdot f(x)}{\\|w\\|}\\]<br />as distance of x from the decision boundary, i.e., margin. We would like to make this margin to be as large as possible, i.e. maximize the perpendicular distance to the closest point. Thus, the optimization problem becomes<br />\\[--- \\min_{i=1}^n \\frac{y_if(x_i)}{\\|w\\|}\\]</p>\n<p><br />such that \\[y_i\\cdot \\left(w^\\top x_i\\right) \\ge 1, i=1,\\cdots n.\\]<br /><br />(Think about what this function is doing).</p>\n<p>Which operator can be used to replace the '---' in the equation.</p>",
+      "is_live": true,
+      "version": 131,
+      "mode": "multiple",
+      "content_id": 704
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:24:55.919Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 705,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM (Hard Margin) [2 pts]",
+      "created_at": "2017-02-12T19:24:55.916Z",
+      "choices": [
+        {
+          "answer": "\\(argmax_n\\)",
+          "is_correct": false,
+          "id": 4844,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(max_w\\)",
+          "is_correct": false,
+          "id": 4845,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(min_y\\)",
+          "is_correct": false,
+          "id": 4846,
+          "feedback": ""
+        },
+        {
+          "answer": "\\(argmin_w\\)",
+          "is_correct": true,
+          "id": 4847,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Continued from problem 19. The optimization problem you completed is equivalent to the following:<br />\\[{---}\\frac{1}{2}{\\|w\\|}_2^2 \\]</p>\n<p><br />such that \\[y_i\\cdot \\left(w^\\top x_i\\right) \\ge 1, i=1,\\cdots n.\\]</p>\n<p>Which operator can be used to replace the '---' in the equivalent problem.</p>",
+      "is_live": true,
+      "version": 131,
+      "mode": "multiple",
+      "content_id": 705
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:26:48.941Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 706,
+      "question_weight": 1,
+      "category_id": 3,
+      "title": "SVM and Perceptron [2 pts]",
+      "created_at": "2017-02-12T19:26:48.938Z",
+      "choices": [
+        {
+          "answer": "True",
+          "is_correct": false,
+          "id": 4848,
+          "feedback": ""
+        },
+        {
+          "answer": "False",
+          "is_correct": true,
+          "id": 4849,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Separators with large margin will have high generalization errors with high probability as compared to separators with a&nbsp;small margin.</p>",
+      "is_live": true,
+      "version": 131,
+      "mode": "true",
+      "content_id": 706
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:27:41.419Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 707,
+      "question_weight": 1,
+      "category_id": 3,
+      "title": "SVM and Perceptron  [2 pts]",
+      "created_at": "2017-02-12T19:27:41.416Z",
+      "choices": [
+        {
+          "answer": "True",
+          "is_correct": true,
+          "id": 4850,
+          "feedback": ""
+        },
+        {
+          "answer": "False",
+          "is_correct": false,
+          "id": 4851,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Given the same training data, in which the points are linearly separable, the margin of the decision boundary produced by SVM will always be greater than or equal to the margin of the decision boundary produced by Perceptron.</p>",
+      "is_live": true,
+      "version": 131,
+      "mode": "true",
+      "content_id": 707
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:30:14.873Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 709,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM Experiment[1 pt]",
+      "created_at": "2017-02-12T19:30:14.870Z",
+      "choices": [
+        {
+          "answer": "The decision boundary has not changed",
+          "is_correct": false,
+          "id": 4864,
+          "feedback": ""
+        },
+        {
+          "answer": "The decision boundary and the number of support vectors have changed",
+          "is_correct": false,
+          "id": 4865,
+          "feedback": ""
+        },
+        {
+          "answer": "Only the decision boundary has changed",
+          "is_correct": true,
+          "id": 4866,
+          "feedback": ""
+        },
+        {
+          "answer": "Only the number of support vectors has changed",
+          "is_correct": false,
+          "id": 4867,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>What happens after re-running SVM classifier on the new training set in which 20th instance is removed?</p>",
+      "is_live": true,
+      "version": 135,
+      "mode": "multiple",
+      "content_id": 709
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:30:12.208Z",
+      "answers": [
+        {
+          "answer": "84",
+          "is_numeric": true,
+          "id": 7431,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 708,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "SVM Experiment [2 pts]",
+      "created_at": "2017-02-12T19:30:12.205Z",
+      "choices": [],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>Report the sum of indices of the new support vectors resulting from running SVM after removing support vector (20th instance) from the original data.&nbsp;</p>\n<p>Note : If you are using Python, take sum of indices of support vectors and add the number of support vectors. For example, if the indices of support vectors are [1,2,3], your answer to this question should be 9 = 1+2+3+3.</p>",
+      "is_live": true,
+      "version": 151,
+      "mode": "numerical",
+      "content_id": 708
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:31:00.763Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 710,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM Experiment [1 pt]",
+      "created_at": "2017-02-12T19:31:00.760Z",
+      "choices": [
+        {
+          "answer": "The decision boundary has not changed",
+          "is_correct": true,
+          "id": 4868,
+          "feedback": ""
+        },
+        {
+          "answer": "The decision boundary and the number of support vectors have changed",
+          "is_correct": false,
+          "id": 4869,
+          "feedback": ""
+        },
+        {
+          "answer": "Only the decision boundary has changed",
+          "is_correct": false,
+          "id": 4870,
+          "feedback": ""
+        },
+        {
+          "answer": "Only the number of support vectors has changed",
+          "is_correct": false,
+          "id": 4871,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>What happens after re-running SVM classifier on the new training set in which 1st instance is removed?</p>",
+      "is_live": true,
+      "version": 129,
+      "mode": "multiple",
+      "content_id": 710
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:32:05.454Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 711,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM Experiment [2 pts]",
+      "created_at": "2017-02-12T19:32:05.451Z",
+      "choices": [
+        {
+          "answer": "The \\(\\alpha\\) values (in the Lagrangian dual form of SVM objective) corresponding to support vectors and non-support vectors from the original data are different",
+          "is_correct": true,
+          "id": 4872,
+          "feedback": ""
+        },
+        {
+          "answer": "Support vectors are farther away from the decision boundary",
+          "is_correct": false,
+          "id": 4873,
+          "feedback": ""
+        },
+        {
+          "answer": "Slack variables for non-support vectors are usually larger",
+          "is_correct": false,
+          "id": 4874,
+          "feedback": ""
+        },
+        {
+          "answer": "The number of data has changed, leading to less precision",
+          "is_correct": false,
+          "id": 4875,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>You have trained and plotted the result of SVM from problems above. What is the reason for similarities/differences between the effects of removing a support vector and of removing a non-support vector?</p>",
+      "is_live": true,
+      "version": 129,
+      "mode": "multiple",
+      "content_id": 711
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:35:07.442Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 712,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM Experiment [1 pt]",
+      "created_at": "2017-02-12T19:35:07.440Z",
+      "choices": [
+        {
+          "answer": "The decision boundary hasn't changed",
+          "is_correct": false,
+          "id": 4876,
+          "feedback": ""
+        },
+        {
+          "answer": "The number of support vectors has increased",
+          "is_correct": false,
+          "id": 4877,
+          "feedback": ""
+        },
+        {
+          "answer": "The classification accuracy has increased",
+          "is_correct": true,
+          "id": 4878,
+          "feedback": ""
+        },
+        {
+          "answer": "The classification accuracy hasn't changed",
+          "is_correct": false,
+          "id": 4879,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>Run SVM on given data with different values of C (coefficient for slack variables) = 10, 20, and 50. What can be observed as C is increased from the&nbsp;three results?&nbsp;</p>",
+      "is_live": true,
+      "version": 129,
+      "mode": "multiple",
+      "content_id": 712
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T02:17:35.388Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 719,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM Experiment [2pt]",
+      "created_at": "2017-02-13T02:17:35.383Z",
+      "choices": [
+        {
+          "answer": "Increasing C puts more weight on minimizing slack variables",
+          "is_correct": true,
+          "id": 4980,
+          "feedback": ""
+        },
+        {
+          "answer": "Increasing C leads to larger value of margin",
+          "is_correct": false,
+          "id": 4981,
+          "feedback": ""
+        },
+        {
+          "answer": "Setting C=0 will also work for data that is not linearly separable",
+          "is_correct": false,
+          "id": 4982,
+          "feedback": ""
+        },
+        {
+          "answer": "Setting C=\\(\\infty\\) will not give the maximum margin separator of the data if the data is linearly separable",
+          "is_correct": false,
+          "id": 4983,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>Which of the following is correct (use your insights gathered from SVM experiment)?</p>",
+      "is_live": true,
+      "version": 118,
+      "mode": "multiple",
+      "content_id": 719
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-22T01:39:29.008Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 737,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM Experiment [2pt]",
+      "created_at": "2017-02-22T01:39:29.005Z",
+      "choices": [
+        {
+          "answer": "All of them are greater than 1",
+          "is_correct": false,
+          "id": 5333,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are less than 1",
+          "is_correct": false,
+          "id": 5334,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are equal to 1",
+          "is_correct": false,
+          "id": 5335,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are greater than 0",
+          "is_correct": true,
+          "id": 5336,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>Which of the following is true about the slack variables values for each of the red points in the right subplot?&nbsp;Choose the closest description.</p>",
+      "is_live": true,
+      "version": 42,
+      "mode": "multiple",
+      "content_id": 737
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-22T01:39:29.040Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 738,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM Experiment [2pt]",
+      "created_at": "2017-02-22T01:39:29.034Z",
+      "choices": [
+        {
+          "answer": "All of them are greater than 1",
+          "is_correct": false,
+          "id": 5337,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are less than 1 and greater than 0",
+          "is_correct": false,
+          "id": 5338,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are equal to 1",
+          "is_correct": false,
+          "id": 5339,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are equal to 0",
+          "is_correct": true,
+          "id": 5340,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>Which of the following is true about the slack variables values for each of the blue&nbsp;points in the right subplot?</p>",
+      "is_live": true,
+      "version": 37,
+      "mode": "multiple",
+      "content_id": 738
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-22T01:39:29.069Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 739,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "SVM Experiment [2pt]",
+      "created_at": "2017-02-22T01:39:29.066Z",
+      "choices": [
+        {
+          "answer": "All of them are greater than 1",
+          "is_correct": false,
+          "id": 5341,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are less than 1 and greater than 0",
+          "is_correct": false,
+          "id": 5342,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are equal to 1",
+          "is_correct": false,
+          "id": 5343,
+          "feedback": ""
+        },
+        {
+          "answer": "All of them are equal to 0",
+          "is_correct": true,
+          "id": 5344,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 2 of the homework assignment. Please read through&nbsp;Problem 2 before answering this question.</p>\n<p>Which of the following is true about the slack variables values for each of the black&nbsp;points in the right subplot?</p>",
+      "is_live": true,
+      "version": 37,
+      "mode": "multiple",
+      "content_id": 739
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T08:20:16.642Z",
+      "answers": [
+        {
+          "answer": "0.0383333333333",
+          "is_numeric": true,
+          "id": 7432,
+          "answer_margin": 0.002,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 733,
+      "question_weight": 1,
+      "category_id": 2,
+      "title": "Experiments on Perceptron [2pts]",
+      "created_at": "2017-02-13T08:20:16.639Z",
+      "choices": [],
+      "content": "<p>Note: This question is based on material discussed in Problem 3 of the homework assignment. Please read through&nbsp;Problem 3 before answering this question.&nbsp;</p>\n<p>What is the error rate of the trained perceptron on the XTest dataset after iterating&nbsp;the XTrain dataset 10 times?</p>\n<p>Please report a number from 0 to 1.</p>",
+      "is_live": true,
+      "version": 120,
+      "mode": "numerical",
+      "content_id": 733
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T08:15:18.515Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 730,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Experiments on Kernel Perceptron [6pts]",
+      "created_at": "2017-02-13T08:15:18.512Z",
+      "choices": [
+        {
+          "answer": "0.01",
+          "is_correct": false,
+          "id": 5302,
+          "feedback": ""
+        },
+        {
+          "answer": "0.1",
+          "is_correct": false,
+          "id": 5303,
+          "feedback": ""
+        },
+        {
+          "answer": "1",
+          "is_correct": false,
+          "id": 5304,
+          "feedback": ""
+        },
+        {
+          "answer": "10",
+          "is_correct": true,
+          "id": 5305,
+          "feedback": ""
+        },
+        {
+          "answer": "100",
+          "is_correct": false,
+          "id": 5306,
+          "feedback": ""
+        },
+        {
+          "answer": "1000",
+          "is_correct": false,
+          "id": 5332,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 3 of the homework assignment. Please read through&nbsp;Problem 3 before answering this question.&nbsp;</p>\n<p>Conduct five experiments on kernel perceptron, with \\(\\sigma = 0.01, 0.1, 1, 10, 100, 1000\\) for the RBF kernel function. Train the kernel perceptron by going through the data twice in each experiment, which \\(\\sigma\\) achieve the lowest testing error (error rate on XTest dataset)?&nbsp;</p>",
+      "is_live": true,
+      "version": 110,
+      "mode": "multiple",
+      "content_id": 730
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-13T08:19:03.681Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 731,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Experiments on Kernel Perceptron [2pts]",
+      "created_at": "2017-02-13T08:19:03.678Z",
+      "choices": [
+        {
+          "answer": "Both small and large \\(\\sigma\\) overfit the data",
+          "is_correct": false,
+          "id": 5307,
+          "feedback": ""
+        },
+        {
+          "answer": "Both small and large \\(\\sigma\\) underfit the data",
+          "is_correct": false,
+          "id": 5308,
+          "feedback": ""
+        },
+        {
+          "answer": "large \\(\\sigma\\) overfits the data, small \\(\\sigma\\) underfits the data",
+          "is_correct": false,
+          "id": 5309,
+          "feedback": ""
+        },
+        {
+          "answer": "large \\(\\sigma\\) underfits the data, small \\(\\sigma\\) overfits the data",
+          "is_correct": true,
+          "id": 5310,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Note: This question is based on material discussed in Problem 3 of the homework assignment. Please read through&nbsp;Problem 3 before answering this question.&nbsp;</p>\n<p>What is the reason for the above experiments results on different \\(\\sigma\\)?</p>",
+      "is_live": true,
+      "version": 102,
+      "mode": "multiple",
+      "content_id": 731
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:49:36.328Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 713,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Collaboration Policy Questions [1/6 pts]",
+      "created_at": "2017-02-12T19:49:36.326Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 4948,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": true,
+          "id": 4949,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Did you receive any help whatsoever from anyone in solving this assignment?</p>",
+      "is_live": true,
+      "version": 128,
+      "mode": "multiple",
+      "content_id": 713
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T20:00:21.285Z",
+      "answers": [
+        {
+          "answer": "",
+          "is_numeric": false,
+          "id": 7433,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 718,
+      "question_weight": 1,
+      "category_id": 4,
+      "title": "Collaboration Policy Questions [1/6 pts]",
+      "created_at": "2017-02-12T20:00:21.282Z",
+      "choices": [],
+      "content": "<p>If you answered Yes on the previous question, please give full details below (e.g. &ldquo;Jane Doe explained to me what is asked in Question 3.4&rdquo;).</p>",
+      "is_live": true,
+      "version": 123,
+      "mode": "short",
+      "content_id": 718
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:52:00.910Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 715,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Collaboration Policy Questions [1/6 pts]",
+      "created_at": "2017-02-12T19:52:00.907Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 4984,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": true,
+          "id": 4985,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Did you give any help whatsoever to anyone in solving this assignment?</p>",
+      "is_live": true,
+      "version": 128,
+      "mode": "multiple",
+      "content_id": 715
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:59:36.142Z",
+      "answers": [
+        {
+          "answer": "",
+          "is_numeric": false,
+          "id": 7434,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 717,
+      "question_weight": 1,
+      "category_id": 4,
+      "title": "Collaboration Policy Questions [1/6 pts]",
+      "created_at": "2017-02-12T19:59:36.139Z",
+      "choices": [],
+      "content": "<p>If you answered Yes on the previous question, please give full details below (e.g. &ldquo;I pointed Joe Smith to section 2.3 since he didn&rsquo;t know how to proceed with Question 2&rdquo;).</p>",
+      "is_live": true,
+      "version": 125,
+      "mode": "short",
+      "content_id": 717
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:51:38.615Z",
+      "answers": [],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 714,
+      "question_weight": 1,
+      "category_id": 1,
+      "title": "Collaboration Policy Questions [1/6 pts]",
+      "created_at": "2017-02-12T19:51:38.612Z",
+      "choices": [
+        {
+          "answer": "Yes",
+          "is_correct": true,
+          "id": 4986,
+          "feedback": ""
+        },
+        {
+          "answer": "No",
+          "is_correct": true,
+          "id": 4987,
+          "feedback": ""
+        }
+      ],
+      "content": "<p>Did you find or come across code that implements any part of this assignment?</p>",
+      "is_live": true,
+      "version": 132,
+      "mode": "multiple",
+      "content_id": 714
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-12T19:59:01.259Z",
+      "answers": [
+        {
+          "answer": "",
+          "is_numeric": false,
+          "id": 7435,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 716,
+      "question_weight": 1,
+      "category_id": 4,
+      "title": "Collaboration Policy Questions [1/6 pts]",
+      "created_at": "2017-02-12T19:59:01.256Z",
+      "choices": [],
+      "content": "<p>If you answered Yes on the previous question, please give full details below (book &amp; page, URL &amp; location within the page, etc.).</p>",
+      "is_live": true,
+      "version": 127,
+      "mode": "short",
+      "content_id": 716
+    },
+    {
+      "max_attempts_for_credit": 10,
+      "updated_at": "2017-02-15T21:20:19.234Z",
+      "answers": [
+        {
+          "answer": "",
+          "is_numeric": false,
+          "id": 7436,
+          "answer_margin": 0,
+          "feedback": ""
+        }
+      ],
+      "default_feedback": " ",
+      "content_type": "question",
+      "content_hash": "0",
+      "id": 736,
+      "question_weight": 1,
+      "category_id": 4,
+      "title": "Time Spent [1 pt]",
+      "created_at": "2017-02-15T21:20:19.231Z",
+      "choices": [],
+      "content": "<p>How many hours did you spend on this assignment?</p>",
+      "is_live": true,
+      "version": 72,
+      "mode": "short",
+      "content_id": 736
+    }
+  ],
+  "is_public": false,
+  "delayed_feedback": false,
+  "late_day_buffer": 10,
+  "content_hash": "0",
+  "late_days": false,
+  "id": 121
+}
+            
