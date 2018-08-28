@@ -7,7 +7,7 @@ Created on Mon Aug 13 23:23:13 2018
 """
 from datetime import datetime
 import json
-#import requests
+import sys
 from pprint import pprint
 
 import pylatex
@@ -21,7 +21,9 @@ from pylatex.lists import Enumerate, Itemize
 
 import re
 
-with open('qnaJson/calcLA.json') as data_file:    
+convFile=sys.argv[1]
+
+with open(convFile) as data_file:    
     data = json.load(data_file)
 
 #pprint(data)
